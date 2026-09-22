@@ -222,9 +222,9 @@ CI/CD checks
 | [Healthcare Patient Management System](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice) | Five-service microservices build using Spring Boot, Spring Cloud Gateway, gRPC, Protocol Buffers, Kafka, JWT, PostgreSQL and Docker |
 | [Payment Processing Microservice](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | Spring Boot → Stripe → MySQL payment flow |
 | [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | Email delivery state around AWS SES |
-| [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | CSV ingestion and chunk-oriented processing |
-| [Spring Boot File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | File-processing API experiments |
-| [API Gateway Realtime Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | Gateway and service-routing work |
+| [Employee Management System](https://github.com/JetyChodipilli/EmployeeManagementSystem) | Spring Boot / Spring MVC application for employee records, search, action history, PDF ID-proof upload, report generation and MySQL persistence |
+| [OpsHub](https://github.com/JetyChodipilli/OpsHub) | Workforce, delivery and operations platform baseline using a Spring Boot modular monolith, PostgreSQL, Kafka outbox/inbox patterns, optional Redis and resource-scoped authorization |
+| [SeatEngine](https://github.com/JetyChodipilli/SeatEngine) | Distributed movie-booking system with Spring Boot microservices, JWT gateway security, Redis/JPA seat locking, idempotent booking/payment, Kafka outbox events, resilience patterns and observability |
 
 ---
 
