@@ -43,6 +43,7 @@ jobs:
             return response.json();
           }
 
+          (async () => {
           const repos = await get(`https://api.github.com/users/${owner}/repos?per_page=100&type=owner&sort=updated`);
           const totals = {};
 
@@ -109,6 +110,10 @@ jobs:
 
           fs.mkdirSync('assets', { recursive: true });
           fs.writeFileSync('assets/top-languages.svg', svg);
+          })().catch((error) => {
+            console.error(error);
+            process.exit(1);
+          });
           NODE
 
       - name: Commit updated language card
