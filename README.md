@@ -1,33 +1,32 @@
-<table>
-<tr>
-<td width="64%" valign="top">
-
-# Jety Chodipilli
-
-### Java Backend Engineer
-
-I build backend systems with **Java, Spring Boot, PostgreSQL, Kafka and Redis**.  
-Most of my work is around workflow-heavy applications, API design, data consistency and the unglamorous parts that keep systems reliable.
-
-<p>
-  <img src="https://img.shields.io/badge/Java-15324B?style=flat-square&logo=openjdk&logoColor=F6F3EC" alt="Java" />
-  <img src="https://img.shields.io/badge/Spring_Boot-3F776B?style=flat-square&logo=springboot&logoColor=F6F3EC" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/PostgreSQL-315A75?style=flat-square&logo=postgresql&logoColor=F6F3EC" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Kafka-3E4850?style=flat-square&logo=apachekafka&logoColor=F6F3EC" alt="Kafka" />
-  <img src="https://img.shields.io/badge/Redis-A6533D?style=flat-square&logo=redis&logoColor=F6F3EC" alt="Redis" />
-  <img src="https://img.shields.io/badge/Docker-3F77A1?style=flat-square&logo=docker&logoColor=F6F3EC" alt="Docker" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/coastal-engineering-hero.svg" width="100%" alt="Jety Chodipilli — Java Backend Engineer" />
 </p>
 
-**Build systems that are understandable, reliable and maintainable.**
+<table>
+<tr>
+<td width="68%" valign="top">
 
-[BrainServe live demo](https://brain-serve-connect-vercel-demo.vercel.app/) · [All repositories](https://github.com/JetyChodipilli?tab=repositories)
+## What I actually work on
+
+I build backend-heavy applications where **workflow, permissions, data integrity and failure handling** matter more than a pretty architecture diagram.
+
+My default stack is Java + Spring Boot + PostgreSQL. I use Kafka, Redis and cloud services when the problem earns the extra moving parts.
+
+Right now, most of my attention is on:
+- multi-tenant application design
+- workflow engines and state transitions
+- authentication / authorization boundaries
+- PostgreSQL-backed domain models
+- integration testing and release confidence
+
+[**BrainServe live demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Browse repositories →**](https://github.com/JetyChodipilli?tab=repositories)
 
 </td>
-<td width="36%" align="center" valign="top">
+<td width="32%" align="center" valign="top">
 
-<img src="https://res.cloudinary.com/dtl11fi8q/image/upload/v1774869278/IMG_20260330_164201_qdj4z0.png" width="260" alt="Jety Chodipilli" />
+<img src="https://res.cloudinary.com/dtl11fi8q/image/upload/v1774869278/IMG_20260330_164201_qdj4z0.png" width="245" alt="Jety Chodipilli" />
 
-<sub><b>Backend first. Real systems. Keep building.</b></sub>
+<sub><b>Backend first. Real trade-offs. Keep shipping.</b></sub>
 
 </td>
 </tr>
@@ -35,26 +34,46 @@ Most of my work is around workflow-heavy applications, API design, data consiste
 
 ---
 
-## Core expertise
+## Proof, not slogans
 
 <table>
 <tr>
+<td width="36%" valign="top">
+
+### Client Onboarding
+**Verified through Phase 3**
+
+Spring Boot modular monolith, PostgreSQL, Flyway, Next.js, RBAC, MFA and a versioned workflow engine.
+
+The reviewed Phase 3 branch passed backend, frontend, PostgreSQL/Chromium and container verification.
+
+[Repository →](https://github.com/JetyChodipilli/Client-Onboarding)
+
+</td>
 <td width="32%" valign="top">
 
-**Backend**  
-Java · Spring Boot · REST APIs · Spring Security
+### BrainServe Connect
+**Client demo with test evidence**
+
+The public demo preserves the corrected production source while giving clients a password-free browser walkthrough.
+
+**263** existing Node tests passed.  
+**23** browser cases executed.
+
+[Live demo →](https://brain-serve-connect-vercel-demo.vercel.app/)
 
 </td>
-<td width="26%" valign="top">
+<td width="32%" valign="top">
 
-**Data & messaging**  
-PostgreSQL · MySQL · Redis · Kafka · Flyway
+### Integration work
+Small repos. One problem each.
 
-</td>
-<td width="42%" valign="top">
+Stripe payments.  
+AWS SES email delivery.  
+Spring Batch processing.  
+File processing APIs.
 
-**System work**  
-Multi-tenancy · RBAC · workflow engines · event-driven flows · CI/CD · Docker
+[See the smaller builds →](#scraps--sandboxes)
 
 </td>
 </tr>
@@ -66,50 +85,52 @@ Multi-tenancy · RBAC · workflow engines · event-driven flows · CI/CD · Dock
 
 <table>
 <tr>
-<td width="68%" valign="top">
+<td width="70%" valign="top">
 
-### Client Onboarding Platform — flagship
+### 01 / Client Onboarding Platform
 
-A multi-tenant B2B onboarding system built as a **Spring Boot modular monolith** with a Next.js frontend and PostgreSQL as the source of truth.
+**The flagship build.**
 
-The part I care about most is the workflow engine: published workflow versions are immutable, onboarding starts from a snapshot, dependencies are validated, and tenant-authored conditions never execute arbitrary code.
+A multi-tenant B2B onboarding system built as a modular monolith. One Spring Boot deployable. One PostgreSQL source of truth. Explicit domain boundaries.
 
-**On `main` now:** identity, tenancy, RBAC, MFA, clients, contacts, services, projects and the Phase 3 workflow engine.
+The workflow engine is the part I spent the most thought on.
 
-**Stack:** Java 17 · Spring Boot 4.1 · PostgreSQL 17 · Flyway · Next.js 16 · React 19 · Testcontainers · Playwright · Docker
+A workflow template can change tomorrow; onboarding that already started should not mutate with it. Published workflow versions are immutable, and starting onboarding writes both an exact JSON snapshot and normalized step instances in one transaction.
 
-[Repository](https://github.com/JetyChodipilli/Client-Onboarding)
+Dependencies reject cycles and invalid edges. Conditions use a fixed model instead of executing tenant-authored code.
+
+**On `main`:** identity, tenancy, RBAC, MFA, clients, contacts, services, projects and Phase 3 workflow execution.
+
+`Java 17` · `Spring Boot 4.1` · `PostgreSQL 17` · `Flyway` · `Next.js 16` · `Testcontainers` · `Playwright`
+
+[**Read the code →**](https://github.com/JetyChodipilli/Client-Onboarding)  
+[Architecture notes →](https://github.com/JetyChodipilli/Client-Onboarding/tree/main/docs/architecture)
 
 </td>
-<td width="32%" valign="top">
+<td width="30%" valign="top">
 
-### BrainServe Connect
+### 02 / BrainServe Connect
 
-The public repo is a **browser demo**, not a fake production backend.
+The public repo is intentionally a browser demo.
 
-It lets a client move through eight role workspaces, sample appointment flows, reports and the connection-recovery experience without passwords or infrastructure.
+Eight role workspaces, appointment flows, reports and recovery UI can be shown without exposing a real backend or giving clients production credentials.
 
-**Demo evidence:** production tests stayed green; the demo browser suite covers desktop/mobile Chromium flows.
+The limitations are documented too: sample data, Chromium-only browser verification for the current pass, and a known large JS chunk warning.
 
-[Live demo](https://brain-serve-connect-vercel-demo.vercel.app/)  
-[Demo repository](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo)
+[**Open live demo →**](https://brain-serve-connect-vercel-demo.vercel.app/)  
+[Demo source →](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo)
 
 </td>
 </tr>
 </table>
 
-### Supporting work
-
-- [**Payment Processing Microservice**](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) — Spring Boot → Stripe → MySQL payment flow.
-- [**AWS SES Email Service**](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) — persists email state around AWS SES delivery.
-- [**Spring Batch Processing**](https://github.com/JetyChodipilli/Spring-Batch-Processing) — CSV ingestion and chunk-oriented processing.
-- [**Spring Boot File Processing API**](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) — file upload and conversion experiments.
-
 ---
 
-## Architecture snapshot
+## Architecture choices I care about
 
-This is the current Client Onboarding shape. I kept it as a modular monolith on purpose; Redis and Kafka are **not** in this project because the current workload does not justify them.
+### Keep the system simple until complexity pays rent
+
+For Client Onboarding, I chose a modular monolith instead of splitting the domain into services on day one.
 
 ```mermaid
 flowchart LR
@@ -118,68 +139,76 @@ flowchart LR
     API --> DB[("PostgreSQL")]
 ```
 
-That project makes one trade-off very explicit: **keep module boundaries strong before paying the cost of distributed services.**
+That means:
+- module boundaries are enforced in code before they become network boundaries
+- transactions stay local while the domain is still evolving
+- Redis and Kafka stay out until there is a measured reason to bring them in
+
+Different project, different trade-off. BrainServe uses Kafka and Redis because its problem shape is different.
 
 ---
 
 ## Stack in rotation
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,aws,githubactions,maven,git,linux,nextjs,ts" alt="Technology stack" />
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,aws,githubactions,maven,git,linux,nextjs,ts" alt="Java, Spring Boot, PostgreSQL, MySQL, Redis, Kafka, Docker, AWS, GitHub Actions, Maven, Git, Linux, Next.js and TypeScript" />
 </p>
+
+**Daily tools:** Java · Spring Boot · PostgreSQL · Git · Maven  
+**When the system needs them:** Kafka · Redis · Docker · AWS · GitHub Actions  
+**Frontend enough to ship the whole flow:** Next.js · React · TypeScript
 
 ---
 
 ## Current friction
 
-I would rather show the rough edges than pretend everything is finished.
+I keep this section because finished-looking portfolios are usually lying by omission.
 
-- **Client Onboarding:** `main` currently stops at Phase 3. Client invitation and portal work are not merged there yet.
-- **BrainServe demo:** the build still reports a large JavaScript chunk warning. The browser verification is Chromium-based; Firefox, WebKit and real mobile devices are still outside the current demo test pass.
+**Client Onboarding**  
+`main` currently stops at Phase 3. Client invitation and portal work are not merged there yet.
+
+**BrainServe demo**  
+The current build reports a large JavaScript chunk warning. Firefox, WebKit and real-device validation are still outside the last demo verification pass.
+
+**Payment service**  
+The learning repo still carries a misspelled `curreny` request field, inconsistent package naming and no idempotency layer. I documented it instead of polishing the README around it.
 
 ---
 
 ## Scraps & sandboxes
 
-Small repos where I isolate one idea instead of dressing everything up as a flagship project.
+Not everything needs a case study.
 
-- [BasicAuthentication](https://github.com/JetyChodipilli/BasicAuthentication)
-- [CustomUserDetailsService](https://github.com/JetyChodipilli/CustomUserDetailsService)
-- [API-Gateway-Realtime-Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project)
-- [Spring-Cloud-ApiGateway](https://github.com/JetyChodipilli/Spring-Cloud-ApiGateway)
+| Repo | Why it exists |
+|---|---|
+| [BasicAuthentication](https://github.com/JetyChodipilli/BasicAuthentication) | Isolate Spring Security basics without a larger app around them |
+| [CustomUserDetailsService](https://github.com/JetyChodipilli/CustomUserDetailsService) | Small authentication/user-details experiment |
+| [API-Gateway-Realtime-Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | Gateway/service-routing work |
+| [Spring-Cloud-ApiGateway](https://github.com/JetyChodipilli/Spring-Cloud-ApiGateway) | Spring Cloud Gateway + Eureka exploration |
+| [Payment Processing](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | Stripe charge → MySQL persistence path |
+| [AWS SES Email](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | QUEUED → SES → SENT/FAILED delivery state |
+| [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | CSV ingestion and chunk processing |
+| [File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | CSV/Excel/XML processing experiments |
 
 ---
 
-## Contribution journey
-
-<table>
-<tr>
-<td width="72%" valign="top">
+## Contribution trail
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
+  <img width="100%" alt="GitHub contribution snake" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
 </picture>
 
-</td>
-<td width="28%" valign="top">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JetyChodipilli&layout=compact&hide_border=true&bg_color=F6F3EC&title_color=15324B&text_color=43525D" alt="Top languages" />
-
-</td>
-</tr>
-</table>
-
 ---
 
-## Live evidence
+## If you are reviewing my work
 
-**BrainServe Connect client demo:**  
-https://brain-serve-connect-vercel-demo.vercel.app/
+Start here:
 
-The demo is intentionally sample-data driven. No live database, JWT sign-in, email, OTP, Kafka, Redis or backend export jobs are running behind that public walkthrough.
+1. [**Client Onboarding**](https://github.com/JetyChodipilli/Client-Onboarding) — architecture and backend depth.
+2. [**BrainServe Connect demo**](https://brain-serve-connect-vercel-demo.vercel.app/) — product flow and client presentation.
+3. [**AWS SES Email Service**](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) — small integration with explicit delivery states.
+4. [**Payment Processing Service**](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) — useful partly because the rough edges are still visible.
 
----
-
-<sub>Java backend engineering · system design · data flows · testing · reliability</sub>
+<sub>Java backend engineering · system design · data integrity · testing · reliability</sub>
