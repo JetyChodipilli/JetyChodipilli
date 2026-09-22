@@ -1,0 +1,69 @@
+<svg width="1200" height="320" viewBox="0 0 1200 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1200" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F3E8"/>
+      <stop offset="0.55" stop-color="#EEF4EF"/>
+      <stop offset="1" stop-color="#E5EFF1"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#315A75"/>
+      <stop offset="0.55" stop-color="#3F776B"/>
+      <stop offset="1" stop-color="#6B8F87"/>
+    </linearGradient>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+      .wave1 { animation: drift1 8s ease-in-out infinite alternate; transform-origin: center; }
+      .wave2 { animation: drift2 10s ease-in-out infinite alternate; transform-origin: center; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; }
+      .beam { animation: beam 5s ease-in-out infinite; transform-origin: 1032px 104px; }
+      @keyframes drift1 { from { transform: translateX(-10px); } to { transform: translateX(16px); } }
+      @keyframes drift2 { from { transform: translateX(12px); } to { transform: translateX(-14px); } }
+      @keyframes pulse { 0%,100% { opacity:.35; } 50% { opacity:.9; } }
+      @keyframes beam { 0%,100% { opacity:.08; transform: rotate(-5deg); } 50% { opacity:.22; transform: rotate(5deg); } }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="28" fill="url(#paper)"/>
+  <circle cx="1010" cy="82" r="92" fill="#D8E7DF" opacity=".55" filter="url(#soft)"/>
+  <circle cx="1088" cy="190" r="120" fill="#DCE9EF" opacity=".65" filter="url(#soft)"/>
+
+  <text x="58" y="62" class="mono" font-size="17" letter-spacing="3" fill="#3F776B">BACKEND ENGINEERING • SYSTEM DESIGN • RELIABILITY</text>
+  <text x="56" y="140" class="serif" font-size="68" font-weight="700" fill="#15324B">Jety Chodipilli</text>
+  <text x="60" y="188" class="mono" font-size="26" font-weight="600" fill="#315A75">Java Backend Engineer</text>
+  <text x="60" y="232" class="mono" font-size="18" fill="#43525D">I build systems that are understandable, testable, and worth maintaining.</text>
+
+  <g class="wave1">
+    <path d="M0 279 C150 252 260 312 425 278 C585 244 692 300 860 270 C1000 245 1084 273 1200 255" stroke="#3F776B" stroke-width="3" opacity=".55"/>
+  </g>
+  <g class="wave2">
+    <path d="M0 298 C145 269 252 322 422 295 C598 268 746 311 902 284 C1046 258 1113 282 1200 274" stroke="#315A75" stroke-width="2" opacity=".38"/>
+  </g>
+
+  <g transform="translate(918 36)">
+    <path class="beam" d="M114 70 L250 26 L250 115 Z" fill="#D6A262"/>
+    <rect x="104" y="75" width="18" height="108" rx="3" fill="#F0ECE2" stroke="#315A75" stroke-width="3"/>
+    <rect x="100" y="66" width="26" height="18" rx="4" fill="#A6533D"/>
+    <rect x="98" y="60" width="30" height="7" rx="3" fill="#15324B"/>
+    <path d="M89 184 H137 L147 202 H79 Z" fill="#315A75"/>
+    <circle cx="113" cy="70" r="5" fill="#F3C96B" class="pulse"/>
+  </g>
+
+  <g class="mono" font-size="14">
+    <rect x="760" y="208" width="112" height="34" rx="17" fill="#F7F3E8" stroke="#7FA49A"/>
+    <text x="781" y="230" fill="#315A75">SPRING BOOT</text>
+    <rect x="882" y="208" width="118" height="34" rx="17" fill="#F7F3E8" stroke="#7FA49A"/>
+    <text x="906" y="230" fill="#315A75">POSTGRESQL</text>
+    <rect x="1010" y="208" width="80" height="34" rx="17" fill="#F7F3E8" stroke="#7FA49A"/>
+    <text x="1031" y="230" fill="#315A75">KAFKA</text>
+    <rect x="1098" y="208" width="72" height="34" rx="17" fill="#F7F3E8" stroke="#7FA49A"/>
+    <text x="1118" y="230" fill="#315A75">REDIS</text>
+  </g>
+
+  <circle cx="742" cy="225" r="5" fill="#3F776B" class="pulse"/>
+  <path d="M717 225 H747" stroke="#3F776B" stroke-width="2"/>
+  <path d="M1154 54 l10 6 -10 6" stroke="#A6533D" stroke-width="2" fill="none"/>
+</svg>
