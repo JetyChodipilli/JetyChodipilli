@@ -219,14 +219,12 @@ CI/CD checks
 
 | Repository | Focus |
 |---|---|
+| [Healthcare Patient Management System](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice) | Five-service microservices build using Spring Boot, Spring Cloud Gateway, gRPC, Protocol Buffers, Kafka, JWT, PostgreSQL and Docker |
 | [Payment Processing Microservice](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | Spring Boot → Stripe → MySQL payment flow |
 | [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | Email delivery state around AWS SES |
 | [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | CSV ingestion and chunk-oriented processing |
 | [Spring Boot File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | File-processing API experiments |
 | [API Gateway Realtime Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | Gateway and service-routing work |
-| [Spring Cloud API Gateway](https://github.com/JetyChodipilli/Spring-Cloud-ApiGateway) | Spring Cloud Gateway and Eureka |
-| [BasicAuthentication](https://github.com/JetyChodipilli/BasicAuthentication) | Spring Security fundamentals |
-| [CustomUserDetailsService](https://github.com/JetyChodipilli/CustomUserDetailsService) | Custom authentication / user-details flow |
 
 ---
 
