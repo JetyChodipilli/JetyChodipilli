@@ -109,7 +109,7 @@ jobs:
           </svg>`;
 
           fs.mkdirSync('assets', { recursive: true });
-          fs.writeFileSync('assets/top-languages.svg', svg);
+          fs.writeFileSync('assets/top-languages-v2.svg', svg);
           })().catch((error) => {
             console.error(error);
             process.exit(1);
@@ -120,7 +120,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/top-languages.svg
+          git add assets/top-languages-v2.svg
           if git diff --cached --quiet; then
             echo "No language changes"
             exit 0
