@@ -1,23 +1,16 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/coastal-engineering-hero.svg" width="100%" alt="Jety Chodipilli — Java Backend Engineer" />
+  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/coastal-engineering-hero.svg" width="100%" alt="Jety Chodipilli — Java Backend Developer" />
 </p>
 
 <table>
 <tr>
 <td width="68%" valign="top">
 
-## What I actually work on
+## Professional summary
 
-I build backend-heavy applications where **workflow, permissions, data integrity and failure handling** matter more than a pretty architecture diagram.
+Java Backend Developer focused on **Spring Boot, microservices, secure REST APIs, event-driven workflows and cloud-ready backend systems**.
 
-My default stack is Java + Spring Boot + PostgreSQL. I use Kafka, Redis and cloud services when the problem earns the extra moving parts.
-
-Right now, most of my attention is on:
-- multi-tenant application design
-- workflow engines and state transitions
-- authentication / authorization boundaries
-- PostgreSQL-backed domain models
-- integration testing and release confidence
+I work mainly with **Spring Security, PostgreSQL, Apache Kafka, Redis, Docker, AWS and CI/CD**. The work I enjoy most is where backend correctness matters: role boundaries, state transitions, persistence, async workflows, auditability and release confidence.
 
 [**BrainServe live demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Browse repositories →**](https://github.com/JetyChodipilli?tab=repositories)
 
@@ -26,7 +19,7 @@ Right now, most of my attention is on:
 
 <img src="https://res.cloudinary.com/dtl11fi8q/image/upload/v1774869278/IMG_20260330_164201_qdj4z0.png" width="245" alt="Jety Chodipilli" />
 
-<sub><b>Backend first. Real trade-offs. Keep shipping.</b></sub>
+<sub><b>Backend first. Secure flows. Real systems.</b></sub>
 
 </td>
 </tr>
@@ -34,50 +27,23 @@ Right now, most of my attention is on:
 
 ---
 
-## Proof, not slogans
+## Backend tech stack
 
-<table>
-<tr>
-<td width="36%" valign="top">
+| Area | Technologies |
+|---|---|
+| **Languages** | Java 8 / 17 / 21, Python |
+| **Frameworks** | Spring Boot, Spring MVC, Spring Security, Spring Cloud, Spring Data JPA, Hibernate ORM, WebFlux |
+| **APIs & System Design** | RESTful APIs, Microservices, Event-Driven Architecture, gRPC, Protocol Buffers, API Gateway, Eureka, SOAP |
+| **Databases** | PostgreSQL, MySQL, MongoDB, Hibernate / JPA |
+| **Messaging** | Apache Kafka — producers, consumers, topics, event-driven patterns |
+| **Cloud & DevOps** | AWS EC2, RDS, SES, Docker, GitHub Actions, GitLab CI, Git |
+| **Security** | Spring Security, OAuth 2.0, JWT, RBAC, BCrypt, secure coding practices |
+| **Testing** | JUnit 5, Mockito, unit and integration testing |
+| **Tools** | IntelliJ IDEA, Postman, Eclipse / STS, MobaXterm, Maven |
 
-### Client Onboarding
-**Verified through Phase 3**
-
-Spring Boot modular monolith, PostgreSQL, Flyway, Next.js, RBAC, MFA and a versioned workflow engine.
-
-The reviewed Phase 3 branch passed backend, frontend, PostgreSQL/Chromium and container verification.
-
-[Repository →](https://github.com/JetyChodipilli/Client-Onboarding)
-
-</td>
-<td width="32%" valign="top">
-
-### BrainServe Connect
-**Client demo with test evidence**
-
-The public demo preserves the corrected production source while giving clients a password-free browser walkthrough.
-
-**263** existing Node tests passed.  
-**23** browser cases executed.
-
-[Live demo →](https://brain-serve-connect-vercel-demo.vercel.app/)
-
-</td>
-<td width="32%" valign="top">
-
-### Integration work
-Small repos. One problem each.
-
-Stripe payments.  
-AWS SES email delivery.  
-Spring Batch processing.  
-File processing APIs.
-
-[See the smaller builds →](#scraps--sandboxes)
-
-</td>
-</tr>
-</table>
+<p>
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,mongodb,redis,kafka,docker,aws,githubactions,maven,git,linux" alt="Backend technology stack" />
+</p>
 
 ---
 
@@ -85,40 +51,56 @@ File processing APIs.
 
 <table>
 <tr>
-<td width="70%" valign="top">
+<td width="66%" valign="top">
 
-### 01 / Client Onboarding Platform
+### 01 / BrainServe Connect  
+**Enterprise Visitor & Workforce Management Platform**
 
-**The flagship build.**
+A full-stack enterprise platform designed to digitize visitor management, employee operations, departmental workflows and internal communication.
 
-A multi-tenant B2B onboarding system built as a modular monolith. One Spring Boot deployable. One PostgreSQL source of truth. Explicit domain boundaries.
+The backend uses **seven-role RBAC** for System Admin, CEO, HR Admin, Team Lead, Employee, Receptionist and Security, with role-specific dashboards and approval flows.
 
-The workflow engine is the part I spent the most thought on.
+**Visitor flow**
 
-A workflow template can change tomorrow; onboarding that already started should not mutate with it. Published workflow versions are immutable, and starting onboarding writes both an exact JSON snapshot and normalized step instances in one transaction.
+`Security intake → Reception verification → HR review → Team Lead / Employee / CEO approval → QR visitor pass → check-in / completion`
 
-Dependencies reject cycles and invalid edges. Conditions use a fixed model instead of executing tenant-authored code.
+**Backend work**
+- department-based employee onboarding
+- Team Lead assignment and task worksheets
+- employee progress tracking and HR insights
+- account approval and password recovery
+- profile management and termination approval
+- audit trails and permanent operational logs
+- Kafka-based internal calls and workflow notifications
+- PostgreSQL persistence, Redis support and Flyway migrations
+- Spring Security, BCrypt, RBAC and validated state transitions
 
-**On `main`:** identity, tenancy, RBAC, MFA, clients, contacts, services, projects and Phase 3 workflow execution.
-
-`Java 17` · `Spring Boot 4.1` · `PostgreSQL 17` · `Flyway` · `Next.js 16` · `Testcontainers` · `Playwright`
-
-[**Read the code →**](https://github.com/JetyChodipilli/Client-Onboarding)  
-[Architecture notes →](https://github.com/JetyChodipilli/Client-Onboarding/tree/main/docs/architecture)
-
-</td>
-<td width="30%" valign="top">
-
-### 02 / BrainServe Connect
-
-The public repo is intentionally a browser demo.
-
-Eight role workspaces, appointment flows, reports and recovery UI can be shown without exposing a real backend or giving clients production credentials.
-
-The limitations are documented too: sample data, Chromium-only browser verification for the current pass, and a known large JS chunk warning.
+**Stack:** Java 21 · Spring Boot 3 · Spring Security · Spring Data JPA · PostgreSQL · Kafka · Redis · Flyway · Maven · Docker · REST APIs
 
 [**Open live demo →**](https://brain-serve-connect-vercel-demo.vercel.app/)  
-[Demo source →](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo)
+[Demo repository →](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo)
+
+</td>
+<td width="34%" valign="top">
+
+### 02 / Healthcare Patient Management System
+
+A five-service microservices system covering:
+
+- Patient Service
+- Billing Service
+- Analytics Service
+- Auth Service
+- API Gateway
+
+**Architecture choices**
+- gRPC + Protocol Buffers for Patient ↔ Billing communication
+- Kafka consumer groups for analytics events
+- JWT authentication behind Spring Cloud Gateway
+- Dockerized services and PostgreSQL
+- service decomposition with independent communication boundaries
+
+[Repository →](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice)
 
 </td>
 </tr>
@@ -126,69 +108,92 @@ The limitations are documented too: sample data, Chromium-only browser verificat
 
 ---
 
-## Architecture choices I care about
+## Java backend architecture approach
 
-### Keep the system simple until complexity pays rent
-
-For Client Onboarding, I chose a modular monolith instead of splitting the domain into services on day one.
+This is the backend pattern I use across the projects in my portfolio. It is not a Figma-style box diagram; it shows how requests, security, persistence, async messaging and deployment fit together.
 
 ```mermaid
 flowchart LR
-    Browser["Browser"] --> Web["Next.js"]
-    Web --> API["Spring Boot /api/v1"]
-    API --> DB[("PostgreSQL")]
+    C["Web / Mobile Client"] --> G["API Gateway / Load Balancer"]
+
+    G --> SF["Spring Security Filter Chain"]
+    SF --> AUTH["JWT / OAuth2 / RBAC"]
+    AUTH --> APP["Spring Boot Services"]
+
+    APP --> JPA["Spring Data JPA / Hibernate"]
+    JPA --> PG[("PostgreSQL / MySQL")]
+
+    APP --> REDIS[("Redis
+Cache / Session")]
+
+    APP --> KP["Kafka Producer"]
+    KP --> KT[("Kafka Topics")]
+    KT --> KC["Kafka Consumers
+Notifications / Analytics / Internal Calls"]
+
+    APP <-->|"REST / gRPC"| SVC["Internal Services"]
+
+    FLY["Flyway"] --> PG
+
+    CI["GitHub Actions / GitLab CI"] --> D["Docker Image"]
+    D --> AWS["AWS
+EC2 / RDS / SES"]
 ```
 
-That means:
-- module boundaries are enforced in code before they become network boundaries
-- transactions stay local while the domain is still evolving
-- Redis and Kafka stay out until there is a measured reason to bring them in
+### Request path
 
-Different project, different trade-off. BrainServe uses Kafka and Redis because its problem shape is different.
+`Client → Gateway → Security Filter Chain → Authorization → Controller → Service → Repository → Database`
+
+### Async path
+
+`Service → Kafka Producer → Topic → Consumer → Notification / Analytics / Internal Workflow`
+
+### Delivery path
+
+`Commit → CI/CD → Maven Build & Tests → Docker Image → AWS`
 
 ---
 
-## Stack in rotation
+## Architecture decisions I care about
+
+### Security before business logic
+Authentication and authorization belong at the edge of the backend flow. Controllers should receive an already authenticated actor and still enforce resource-level permissions.
+
+### One source of truth
+Transactional state stays in PostgreSQL/MySQL. Redis is for cache or session use, not the authoritative business record.
+
+### Sync and async have different jobs
+REST or gRPC handles request/response work. Kafka handles workflows where producers should not block on downstream processing.
+
+### Migrations are code
+Flyway keeps schema changes versioned with the application instead of treating the database as a manually maintained dependency.
+
+### Tests are part of delivery
+JUnit/Mockito checks and integration verification belong before packaging and deployment, not after production issues appear.
+
+---
+
+## Supporting backend work
+
+- [**Client Onboarding Platform**](https://github.com/JetyChodipilli/Client-Onboarding) — multi-tenant Spring Boot modular monolith with RBAC, MFA, PostgreSQL, Flyway and a versioned workflow engine.
+- [**Payment Processing Microservice**](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) — Stripe charge → Spring Boot → MySQL persistence.
+- [**AWS SES Email Service**](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) — email state persisted around AWS SES delivery.
+- [**Spring Batch Processing**](https://github.com/JetyChodipilli/Spring-Batch-Processing) — CSV ingestion and chunk-oriented batch processing.
+- [**API Gateway Realtime Project**](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) — API Gateway and service-routing work.
+- [**Spring Cloud API Gateway**](https://github.com/JetyChodipilli/Spring-Cloud-ApiGateway) — Spring Cloud Gateway / Eureka exploration.
+
+---
+
+## Language profile
 
 <p>
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,aws,githubactions,maven,git,linux,nextjs,ts" alt="Java, Spring Boot, PostgreSQL, MySQL, Redis, Kafka, Docker, AWS, GitHub Actions, Maven, Git, Linux, Next.js and TypeScript" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JetyChodipilli&layout=compact&langs_count=8&hide_border=true&theme=transparent&cache_seconds=86400" alt="Top languages used across public GitHub repositories" />
 </p>
 
-**Daily tools:** Java · Spring Boot · PostgreSQL · Git · Maven  
-**When the system needs them:** Kafka · Redis · Docker · AWS · GitHub Actions  
-**Frontend enough to ship the whole flow:** Next.js · React · TypeScript
+If the live GitHub language card is temporarily unavailable, the resume-level language focus is:
 
----
-
-## Current friction
-
-I keep this section because finished-looking portfolios are usually lying by omission.
-
-**Client Onboarding**  
-`main` currently stops at Phase 3. Client invitation and portal work are not merged there yet.
-
-**BrainServe demo**  
-The current build reports a large JavaScript chunk warning. Firefox, WebKit and real-device validation are still outside the last demo verification pass.
-
-**Payment service**  
-The learning repo still carries a misspelled `curreny` request field, inconsistent package naming and no idempotency layer. I documented it instead of polishing the README around it.
-
----
-
-## Scraps & sandboxes
-
-Not everything needs a case study.
-
-| Repo | Why it exists |
-|---|---|
-| [BasicAuthentication](https://github.com/JetyChodipilli/BasicAuthentication) | Isolate Spring Security basics without a larger app around them |
-| [CustomUserDetailsService](https://github.com/JetyChodipilli/CustomUserDetailsService) | Small authentication/user-details experiment |
-| [API-Gateway-Realtime-Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | Gateway/service-routing work |
-| [Spring-Cloud-ApiGateway](https://github.com/JetyChodipilli/Spring-Cloud-ApiGateway) | Spring Cloud Gateway + Eureka exploration |
-| [Payment Processing](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | Stripe charge → MySQL persistence path |
-| [AWS SES Email](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | QUEUED → SES → SENT/FAILED delivery state |
-| [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | CSV ingestion and chunk processing |
-| [File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | CSV/Excel/XML processing experiments |
+**Java — primary backend language**  
+**Python — secondary language**
 
 ---
 
@@ -202,13 +207,23 @@ Not everything needs a case study.
 
 ---
 
+## Current friction
+
+I keep unfinished work visible instead of writing around it.
+
+- **BrainServe demo:** the deployed public version is a client demonstration, not the live production backend.
+- **Client Onboarding:** the current public `main` branch is implemented through Phase 3.
+- **Payment service:** the learning repo still has request-contract and production-hardening work to do.
+
+---
+
 ## If you are reviewing my work
 
 Start here:
 
-1. [**Client Onboarding**](https://github.com/JetyChodipilli/Client-Onboarding) — architecture and backend depth.
-2. [**BrainServe Connect demo**](https://brain-serve-connect-vercel-demo.vercel.app/) — product flow and client presentation.
-3. [**AWS SES Email Service**](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) — small integration with explicit delivery states.
-4. [**Payment Processing Service**](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) — useful partly because the rough edges are still visible.
+1. [**BrainServe Connect live demo**](https://brain-serve-connect-vercel-demo.vercel.app/) — enterprise workflows and product flow.
+2. [**Client Onboarding**](https://github.com/JetyChodipilli/Client-Onboarding) — backend architecture, workflow engine and testing depth.
+3. [**Healthcare Patient Management System**](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice) — microservices, gRPC, Kafka and Spring Cloud.
+4. [**AWS SES Email Service**](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) — AWS integration and delivery-state persistence.
 
-<sub>Java backend engineering · system design · data integrity · testing · reliability</sub>
+<sub>Java · Spring Boot · Microservices · Kafka · PostgreSQL · AWS · Security · Testing</sub>
