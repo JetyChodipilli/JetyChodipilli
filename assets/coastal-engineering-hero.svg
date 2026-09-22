@@ -40,7 +40,7 @@
 <text x="52" y="186" class="sans" font-size="16" fill="#52687A">Spring Boot • Microservices • Event-Driven Systems • Cloud</text>
 
 <g class="mono" font-size="12" fill="#28475D">
-  <rect x="50" y="210" width="92" height="30" rx="9" fill="#FFFFFF" stroke="#B7D1DF"/><text x="72" y="230">JAVA 17</text>
+  <rect x="50" y="210" width="92" height="30" rx="9" fill="#FFFFFF" stroke="#B7D1DF"/><text x="72" y="230">JAVA 17 / 21</text>
   <rect x="150" y="210" width="118" height="30" rx="9" fill="#FFFFFF" stroke="#B7D1DF"/><text x="167" y="230">SPRING BOOT</text>
   <rect x="276" y="210" width="126" height="30" rx="9" fill="#FFFFFF" stroke="#B7D1DF"/><text x="291" y="230">SPRING SECURITY</text>
   <rect x="410" y="210" width="105" height="30" rx="9" fill="#FFFFFF" stroke="#B7D1DF"/><text x="428" y="230">POSTGRESQL</text>
