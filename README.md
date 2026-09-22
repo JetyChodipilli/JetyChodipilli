@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/github-hero-backend.svg" alt="Jety Chodipilli - Java Backend Developer" width="100%" />
+  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/github-hero-backend-v2.svg" alt="Jety Chodipilli - Java Backend Developer" width="100%" />
 </p>
 
 ---
@@ -154,7 +154,7 @@ The system is split into Patient, Billing, Analytics, Auth, and API Gateway serv
 ## Java Backend Architecture Approach
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/backend-architecture-ignition.svg" alt="Ignition-style Java backend architecture flow" width="100%" />
+  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/backend-architecture-ignition-v2.svg" alt="Ignition-style Java backend architecture flow" width="100%" />
 </p>
 
 ### Request path
@@ -213,7 +213,7 @@ Migrations, tests, containers, CI/CD, and deployment are treated as part of the 
 ## Language Profile
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/top-languages.svg" alt="Top languages aggregated from public owned GitHub repositories" width="70%" />
+  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/top-languages-v2.svg" alt="Top languages aggregated from public owned GitHub repositories" width="70%" />
 </p>
 
 The language card is generated inside this profile repository from public repositories, so it does not rely on an external stats-card service.
