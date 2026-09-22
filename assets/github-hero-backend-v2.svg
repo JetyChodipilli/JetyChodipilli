@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="620" viewBox="0 0 1600 620">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="620">
+    <stop stop-color="#F8FBFD"/>
+    <stop offset=".52" stop-color="#EEF7FA"/>
+    <stop offset="1" stop-color="#E6F2F0"/>
+  </linearGradient>
+  <linearGradient id="name" x1="70" y1="0" x2="620" y2="0">
+    <stop stop-color="#102A43"/>
+    <stop offset=".5" stop-color="#155EEF"/>
+    <stop offset="1" stop-color="#0F9F8F"/>
+  </linearGradient>
+  <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#15324B" flood-opacity=".10"/>
+  </filter>
+  <style>
+    .sans{font-family:Arial,Helvetica,sans-serif}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .flow{stroke-dasharray:10 12;animation:dash 6s linear infinite}
+    .pulse{animation:pulse 2.3s ease-in-out infinite}
+    .pulse2{animation:pulse 2.3s ease-in-out .7s infinite}
+    .scan{animation:scan 5.5s ease-in-out infinite}
+    @keyframes dash{to{stroke-dashoffset:-220}}
+    @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes scan{0%,100%{transform:translateX(0);opacity:.2}50%{transform:translateX(70px);opacity:.8}}
+  </style>
+</defs>
+
+<rect width="1600" height="620" rx="30" fill="url(#bg)"/>
+<g opacity=".22" stroke="#76A7BE" stroke-width="1">
+  <path d="M0 70H1600M0 140H1600M0 210H1600M0 280H1600M0 350H1600M0 420H1600M0 490H1600M0 560H1600"/>
+  <path d="M100 0V620M200 0V620M300 0V620M400 0V620M500 0V620M600 0V620M700 0V620M800 0V620M900 0V620M1000 0V620M1100 0V620M1200 0V620M1300 0V620M1400 0V620M1500 0V620"/>
+</g>
+
+<!-- top rail -->
+<g class="mono" font-size="16" fill="#47677A">
+  <text x="70" y="48" letter-spacing="4">CODE  •  BUILD  •  SECURE  •  DEPLOY  •  SCALE</text>
+  <text x="1280" y="48" letter-spacing="2">BACKEND / SYSTEMS</text>
+</g>
+<path d="M70 65H1530" stroke="#A8CAD8"/>
+
+<!-- identity -->
+<text x="70" y="118" class="sans" font-size="28" fill="#587184">Hi there, I’m</text>
+<text x="68" y="205" class="sans" font-size="74" font-weight="800" fill="url(#name)">Jety Chodipilli</text>
+<text x="72" y="253" class="sans" font-size="33" font-weight="700" fill="#15324B">Java Backend Developer</text>
+<text x="72" y="291" class="sans" font-size="20" fill="#52687A">Secure APIs • Microservices • Event-Driven Systems • Cloud</text>
+
+<!-- chips -->
+<g class="mono" font-size="14" fill="#26475C">
+  <g><rect x="70" y="322" width="112" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="93" y="346">JAVA 17/21</text></g>
+  <g><rect x="192" y="322" width="130" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="215" y="346">SPRING BOOT</text></g>
+  <g><rect x="332" y="322" width="154" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="351" y="346">SPRING SECURITY</text></g>
+  <g><rect x="70" y="370" width="124" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="91" y="394">POSTGRESQL</text></g>
+  <g><rect x="204" y="370" width="82" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="226" y="394">KAFKA</text></g>
+  <g><rect x="296" y="370" width="78" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="316" y="394">REDIS</text></g>
+  <g><rect x="384" y="370" width="86" height="38" rx="11" fill="#FFF" stroke="#BDD4DF"/><text x="402" y="394">DOCKER</text></g>
+</g>
+
+<!-- terminal -->
+<g filter="url(#cardShadow)">
+  <rect x="70" y="445" width="430" height="118" rx="18" fill="#0E2B40"/>
+  <circle cx="94" cy="466" r="5" fill="#E06C75"/><circle cx="112" cy="466" r="5" fill="#E5C07B"/><circle cx="130" cy="466" r="5" fill="#98C379"/>
+  <text x="92" y="495" class="mono" font-size="14" fill="#7FD1C8">backend@jety:~$ ./run-system</text>
+  <text x="92" y="520" class="mono" font-size="13" fill="#DCEAF0">Security chain ready  •  DB migrations clean</text>
+  <text x="92" y="543" class="mono" font-size="13" fill="#DCEAF0">Kafka consumers online  •  service health: UP</text>
+  <rect x="92" y="551" width="10" height="13" rx="2" fill="#7FD1C8" class="pulse"/>
+</g>
+
+<!-- main engineering board -->
+<g filter="url(#cardShadow)">
+  <rect x="545" y="92" width="745" height="420" rx="24" fill="#FFFFFF" fill-opacity=".90" stroke="#B9D5E1"/>
+  <text x="574" y="127" class="sans" font-size="24" font-weight="700" fill="#15324B">Backend Control Plane</text>
+  <text x="1030" y="126" class="mono" font-size="12" fill="#0F9F8F">LIVE • SECURE • EVENT-DRIVEN</text>
+
+  <!-- ingress -->
+  <rect x="578" y="170" width="120" height="72" rx="14" fill="#F7FBFD" stroke="#93BDD1"/>
+  <text x="616" y="197" class="sans" font-size="14" font-weight="700" fill="#15324B">Client</text>
+  <text x="600" y="220" class="mono" font-size="11" fill="#637A89">REST / HTTP</text>
+
+  <rect x="748" y="170" width="132" height="72" rx="14" fill="#F7FBFD" stroke="#93BDD1"/>
+  <text x="772" y="197" class="sans" font-size="14" font-weight="700" fill="#15324B">API Gateway</text>
+  <text x="770" y="220" class="mono" font-size="11" fill="#637A89">route / edge</text>
+
+  <!-- security -->
+  <rect x="930" y="153" width="150" height="106" rx="14" fill="#F0F9F7" stroke="#78BCAF"/>
+  <text x="951" y="180" class="sans" font-size="14" font-weight="700" fill="#15324B">Spring Security</text>
+  <text x="950" y="202" class="mono" font-size="11" fill="#637A89">JWT / OAuth2</text>
+  <text x="950" y="220" class="mono" font-size="11" fill="#637A89">RBAC / BCrypt</text>
+  <text x="950" y="238" class="mono" font-size="11" fill="#637A89">validation</text>
+
+  <!-- services -->
+  <rect x="1122" y="142" width="130" height="128" rx="14" fill="#EDF4FF" stroke="#8CB1E1"/>
+  <text x="1144" y="170" class="sans" font-size="14" font-weight="700" fill="#15324B">Spring Boot</text>
+  <text x="1140" y="194" class="mono" font-size="10.5" fill="#637A89">domain services</text>
+  <text x="1140" y="214" class="mono" font-size="10.5" fill="#637A89">JPA / Hibernate</text>
+  <text x="1140" y="234" class="mono" font-size="10.5" fill="#637A89">REST / gRPC</text>
+
+  <path d="M698 206H748M880 206H930M1080 206H1122" stroke="#155EEF" stroke-width="3"/>
+  <circle cx="720" cy="206" r="5" fill="#155EEF" class="pulse"/>
+  <circle cx="905" cy="206" r="5" fill="#155EEF" class="pulse2"/>
+
+  <!-- event + data plane -->
+  <text x="582" y="307" class="mono" font-size="12" letter-spacing="2" fill="#527187">EVENT &amp; DATA PLANE</text>
+
+  <rect x="580" y="330" width="150" height="70" rx="13" fill="#FFF7F1" stroke="#E4B286"/>
+  <text x="611" y="357" class="sans" font-size="14" font-weight="700" fill="#15324B">Apache Kafka</text>
+  <text x="604" y="380" class="mono" font-size="11" fill="#637A89">async workflows</text>
+
+  <rect x="760" y="330" width="124" height="70" rx="13" fill="#FFF3F0" stroke="#E4A398"/>
+  <text x="796" y="357" class="sans" font-size="14" font-weight="700" fill="#15324B">Redis</text>
+  <text x="779" y="380" class="mono" font-size="11" fill="#637A89">cache / session</text>
+
+  <rect x="914" y="330" width="142" height="70" rx="13" fill="#F2F6FF" stroke="#90AFE0"/>
+  <text x="940" y="357" class="sans" font-size="14" font-weight="700" fill="#15324B">PostgreSQL</text>
+  <text x="943" y="380" class="mono" font-size="11" fill="#637A89">primary data</text>
+
+  <rect x="1086" y="330" width="144" height="70" rx="13" fill="#F6F3FF" stroke="#AD9BDC"/>
+  <text x="1127" y="357" class="sans" font-size="14" font-weight="700" fill="#15324B">Flyway</text>
+  <text x="1110" y="380" class="mono" font-size="11" fill="#637A89">schema versioning</text>
+
+  <path d="M1187 270V292H655V330M1187 292H822V330M1187 292H985V330M1187 292H1158V330" fill="none" stroke="#0F9F8F" stroke-width="2.5" class="flow"/>
+  <circle cx="655" cy="315" r="5" fill="#0F9F8F" class="pulse"/>
+  <circle cx="985" cy="315" r="5" fill="#0F9F8F" class="pulse2"/>
+
+  <!-- delivery -->
+  <rect x="580" y="438" width="650" height="48" rx="13" fill="#EAF3F7"/>
+  <text x="602" y="468" class="mono" font-size="12" fill="#38566B">MAVEN → JUNIT / MOCKITO → DOCKER → GITHUB ACTIONS → AWS EC2 / RDS / SES</text>
+</g>
+
+<!-- right status rail -->
+<g filter="url(#cardShadow)">
+  <rect x="1325" y="92" width="205" height="420" rx="24" fill="#FFFFFF" fill-opacity=".82" stroke="#B9D5E1"/>
+  <text x="1350" y="127" class="mono" font-size="13" letter-spacing="2" fill="#527187">SYSTEM PROFILE</text>
+  <circle cx="1360" cy="166" r="7" fill="#0F9F8F" class="pulse"/><text x="1380" y="171" class="sans" font-size="16" font-weight="700" fill="#15324B">Scalable</text>
+  <circle cx="1360" cy="211" r="7" fill="#155EEF" class="pulse2"/><text x="1380" y="216" class="sans" font-size="16" font-weight="700" fill="#15324B">Secure</text>
+  <circle cx="1360" cy="256" r="7" fill="#2C7A67" class="pulse"/><text x="1380" y="261" class="sans" font-size="16" font-weight="700" fill="#15324B">Reliable</text>
+  <circle cx="1360" cy="301" r="7" fill="#D49A4A" class="pulse2"/><text x="1380" y="306" class="sans" font-size="16" font-weight="700" fill="#15324B">Impactful</text>
+
+  <path d="M1350 342H1505" stroke="#C4D7E0"/>
+  <text x="1350" y="378" class="mono" font-size="12" fill="#637A89">Hyderabad, India</text>
+  <text x="1350" y="410" class="mono" font-size="12" fill="#0F9F8F">● OPEN TO OPPORTUNITIES</text>
+  <text x="1350" y="454" class="sans" font-size="15" font-style="italic" fill="#315A75">Better backends.</text>
+  <text x="1350" y="478" class="sans" font-size="15" font-style="italic" fill="#315A75">Brighter systems.</text>
+</g>
+
+<!-- decorative data paths -->
+<path d="M505 530C590 570 670 570 750 540S925 525 1010 555S1180 580 1310 535" fill="none" stroke="#67B8D1" stroke-width="2" opacity=".55" class="flow"/>
+<circle cx="750" cy="540" r="6" fill="#155EEF" class="pulse"/>
+<circle cx="1010" cy="555" r="6" fill="#0F9F8F" class="pulse2"/>
+</svg>
