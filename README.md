@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/github-hero-final.jpg" alt="Jety Chodipilli — Java Backend Developer" width="100%" />
+  <img src="./assets/github-hero-final.jpg" alt="Jety Chodipilli — Java Backend Developer" width="100%" />
 </p>
 
 ---
@@ -114,7 +114,7 @@ The backend stays as one Spring Boot deployable, but the domain boundaries are e
 ## Java Backend Architecture Approach
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/backend-architecture-ignition-v2.svg" alt="Java backend architecture approach" width="100%" />
+  <img src="./assets/backend-architecture-ignition-v2.svg" alt="Java backend architecture approach" width="100%" />
 </p>
 
 <table>
@@ -182,7 +182,7 @@ The backend stays as one Spring Boot deployable, but the domain boundaries are e
 ## Language Profile
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/main/assets/top-languages-v2.svg" alt="Top languages across public repositories" width="70%" />
+  <img src="./assets/top-languages-v2.svg" alt="Top languages across public repositories" width="70%" />
 </p>
 
 The language card is generated from public repositories inside this profile repository.
