@@ -2,11 +2,13 @@ name: Generate contribution snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "20 0 * * *"
   workflow_dispatch:
   push:
     branches:
       - main
+    paths:
+      - ".github/workflows/snake.yml"
 
 permissions:
   contents: write
@@ -22,8 +24,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#3F776B&color_dots=#EEF2ED,#CFDDD6,#91B7A7,#5F927F,#315A75
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#91B7A7
+            dist/github-contribution-grid-snake.svg?color_snake=#0F9F8F&color_dots=#EEF7FA,#CFE3EA,#8FC5CF,#4E9FB2,#155EEF
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#63D1C4
 
       - name: Publish generated SVGs to output branch
         uses: crazy-max/ghaction-github-pages@v4
