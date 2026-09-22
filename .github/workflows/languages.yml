@@ -1,0 +1,124 @@
+name: Generate top languages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 1 * * 1"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/languages.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  languages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build language SVG from public repositories
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+
+          const owner = process.env.OWNER;
+          const token = process.env.GH_TOKEN;
+          const headers = {
+            Authorization: `Bearer ${token}`,
+            Accept: 'application/vnd.github+json',
+            'X-GitHub-Api-Version': '2022-11-28'
+          };
+
+          async function get(url) {
+            const response = await fetch(url, { headers });
+            if (!response.ok) throw new Error(`${response.status} ${url}`);
+            return response.json();
+          }
+
+          const repos = await get(`https://api.github.com/users/${owner}/repos?per_page=100&type=owner&sort=updated`);
+          const totals = {};
+
+          for (const repo of repos) {
+            if (repo.fork || repo.archived || repo.name === owner) continue;
+            const languages = await get(repo.languages_url);
+            for (const [language, bytes] of Object.entries(languages)) {
+              totals[language] = (totals[language] || 0) + bytes;
+            }
+          }
+
+          const sum = Object.values(totals).reduce((a, b) => a + b, 0);
+          const rows = Object.entries(totals)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 6)
+            .map(([name, bytes]) => ({ name, pct: sum ? bytes / sum * 100 : 0 }));
+
+          const colors = {
+            Java: '#B07219',
+            Python: '#3572A5',
+            JavaScript: '#F1E05A',
+            TypeScript: '#3178C6',
+            HTML: '#E34C26',
+            CSS: '#563D7C',
+            Shell: '#89E051',
+            Dockerfile: '#384D54',
+            PLpgSQL: '#336790',
+            PHP: '#4F5D95'
+          };
+
+          const esc = (s) => String(s).replace(/[&<>"']/g, c => ({
+            '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'
+          }[c]));
+
+          const width = 520, rowH = 42, top = 64;
+          const height = top + rows.length * rowH + 28;
+          let body = '';
+
+          rows.forEach((row, i) => {
+            const y = top + i * rowH;
+            const color = colors[row.name] || '#5B7184';
+            const bar = Math.max(4, Math.round(row.pct * 3.05));
+            body += `
+              <circle cx="28" cy="${y - 5}" r="6" fill="${color}"/>
+              <text x="44" y="${y}" class="label">${esc(row.name)}</text>
+              <text x="458" y="${y}" class="pct">${row.pct.toFixed(1)}%</text>
+              <rect x="178" y="${y - 12}" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
+              <rect x="178" y="${y - 12}" width="${Math.min(250, bar)}" height="11" rx="5.5" fill="${color}"/>
+            `;
+          });
+
+          const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
+            <style>
+              .title{font:700 20px Arial,sans-serif;fill:#173F5F}
+              .sub{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#6B7F8E}
+              .label{font:600 13px Arial,sans-serif;fill:#28475D}
+              .pct{font:12px ui-monospace,SFMono-Regular,Menlo,monospace;fill:#52687A;text-anchor:end}
+            </style>
+            <rect width="100%" height="100%" rx="18" fill="#F7FBFD" stroke="#C8DDE7"/>
+            <text x="22" y="30" class="title">Top languages</text>
+            <text x="22" y="49" class="sub">Aggregated from public, owned repositories</text>
+            ${body}
+          </svg>`;
+
+          fs.mkdirSync('assets', { recursive: true });
+          fs.writeFileSync('assets/top-languages.svg', svg);
+          NODE
+
+      - name: Commit updated language card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/top-languages.svg
+          if git diff --cached --quiet; then
+            echo "No language changes"
+            exit 0
+          fi
+          git commit -m "chore: refresh language profile"
+          git push
