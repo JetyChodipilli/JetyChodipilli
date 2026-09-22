@@ -113,105 +113,106 @@ It explores service-to-service communication with gRPC + Protocol Buffers, Kafka
 
 ## Backend Architecture Approach
 
-I think about backend architecture as four connected paths: **request handling, persistence, asynchronous work and delivery**.
+This is the backend shape I aim for across my Spring Boot projects. The exact components change by product, but the responsibilities stay separated: **edge/security, application logic, data, messaging, platform configuration, observability and delivery**.
 
 ```text
-CLIENT / MOBILE
-      │
-      ▼
-API GATEWAY / LOAD BALANCER
-      │
-      ▼
-SPRING SECURITY FILTER CHAIN
-JWT · OAuth2 · RBAC
-      │
-      ▼
-CONTROLLER
-Request validation
-      │
-      ▼
-SERVICE / DOMAIN LAYER
-Business rules · workflow transitions · transactions
-      │
-      ├──────────────────────────────► REDIS
-      │                                Cache / Session
-      │
-      ├──────────────────────────────► KAFKA PRODUCER
-      │                                      │
-      │                                      ▼
-      │                                 KAFKA TOPIC
-      │                                      │
-      │                                      ▼
-      │                                CONSUMER GROUP
-      │                            Notifications / Internal
-      │                            Workflows / Analytics
-      │
-      ▼
-REPOSITORY
-Spring Data JPA / Hibernate
-      │
-      ▼
-POSTGRESQL / MYSQL
-Transactional data · audit history
-      ▲
-      │
-    FLYWAY
-Versioned schema migrations
+┌──────────────────────────── CLIENT LAYER ────────────────────────────┐
+│  Web / Mobile / Internal UI / External API Consumer                │
+└───────────────────────────────┬──────────────────────────────────────┘
+                                │ HTTPS / REST
+                                ▼
+┌────────────────────────────── EDGE LAYER ────────────────────────────┐
+│  Load Balancer / API Gateway                                       │
+│  • Routing              • CORS                                     │
+│  • Rate limiting        • Correlation / Request ID                 │
+│  • JWT pre-validation   • Service discovery / load balancing       │
+└───────────────────────────────┬──────────────────────────────────────┘
+                                ▼
+┌──────────────────────────── SECURITY LAYER ──────────────────────────┐
+│  Spring Security Filter Chain                                      │
+│  JWT / OAuth2 · RBAC · BCrypt · resource-level authorization       │
+└───────────────────────────────┬──────────────────────────────────────┘
+                                ▼
+┌────────────────────────── APPLICATION LAYER ─────────────────────────┐
+│  Controller                                                         │
+│     │                                                               │
+│     ├─ Request DTO / Bean Validation                                │
+│     ├─ DTO ↔ Entity / Domain Mapping                                │
+│     └─ Global Exception Handler / Problem Response                  │
+│                                                                     │
+│  Service / Domain Layer                                             │
+│     • business rules        • workflow / state transitions          │
+│     • @Transactional        • idempotency                           │
+│     • authorization checks  • audit/event creation                  │
+│                                                                     │
+│     ├──────── Sync calls ───────► REST / gRPC / OpenFeign           │
+│     ├──────── Cache/session ────► Redis                             │
+│     ├──────── Files ────────────► S3-compatible object storage      │
+│     └──────── Async events ─────► Transactional Outbox / Producer   │
+└───────────────────┬───────────────────────────────┬──────────────────┘
+                    │                               │
+                    ▼                               ▼
+┌──────────────── DATA / PERSISTENCE ─────────┐   ┌──────── MESSAGING ────────┐
+│ Spring Data JPA / Hibernate                │   │ Apache Kafka              │
+│ Repository layer                           │   │ Producer → Topic          │
+│                                            │   │          → Consumer Group │
+│ PostgreSQL / MySQL                         │   │          → DLT / Retry    │
+│ • transactional data                       │   │                           │
+│ • audit history                            │   │ Notifications             │
+│ • idempotency keys                         │   │ Internal workflows        │
+│                                            │   │ Analytics / integrations │
+│ Flyway → versioned schema migrations       │   └───────────────────────────┘
+└─────────────────────────────────────────────┘
 
+┌──────────────────────── PLATFORM / CONFIG ───────────────────────────┐
+│ application.yml / Spring Profiles / Environment Variables           │
+│ Externalized secrets / deployment secrets                           │
+│ Centralized config when a distributed system needs it               │
+│ Scheduler / background workers where the workflow requires them     │
+└──────────────────────────────────────────────────────────────────────┘
 
-DELIVERY
-Git → Maven → Unit / Integration Tests → Docker → CI/CD → AWS
+┌──────────────────────── EXTERNAL INTEGRATIONS ───────────────────────┐
+│ Email / AWS SES · Payment provider · Object storage · External APIs │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────── OBSERVABILITY ─────────────────────────────┐
+│ Structured logs · Spring Actuator · Health / Readiness              │
+│ Metrics / Prometheus · Distributed tracing / Zipkin                 │
+│ Dashboards / Grafana where the project requires them                │
+└──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────── DELIVERY ────────────────────────────────┐
+│ Git                                                                │
+│  ↓                                                                 │
+│ Maven Build                                                        │
+│  ↓                                                                 │
+│ JUnit / Mockito / Testcontainers / Integration Tests               │
+│  ↓                                                                 │
+│ Static / Architecture Checks                                       │
+│  ↓                                                                 │
+│ Docker Image                                                       │
+│  ↓                                                                 │
+│ GitHub Actions / GitLab CI                                         │
+│  ↓                                                                 │
+│ Flyway Migration → Deploy → Health Check                            │
+│  ↓                                                                 │
+│ AWS EC2 / RDS / SES or project-specific runtime                    │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
-### What I expect from this flow
+### How I separate responsibilities
 
-- **Security before business logic** — authentication and role checks happen before protected operations.
-- **Validation at boundaries** — bad requests should fail before they reach domain logic.
-- **Service layer owns business rules** — controllers stay thin; workflow rules and state transitions stay in services/domain code.
-- **Transactions protect related changes** — database updates that belong together should commit or roll back together.
-- **Database is authoritative** — PostgreSQL/MySQL stores business truth; Redis is supporting infrastructure.
-- **Kafka is for decoupled work** — notifications, internal calls or analytics should not block the main request when they do not need to.
-- **Migrations are versioned** — Flyway changes travel with the application.
-- **Tests run before deployment** — build, unit/integration verification, containers and CI/CD are part of delivery.
-
----
-
-## Engineering Practices
-
-<table>
-<tr>
-<td width="33%" valign="top">
-
-### Security
-Spring Security  
-JWT / OAuth2  
-RBAC  
-BCrypt  
-Input validation
-
-</td>
-<td width="33%" valign="top">
-
-### Reliability
-Transactional updates  
-Idempotent operations  
-Flyway migrations  
-Audit history  
-Failure handling
-
-</td>
-<td width="34%" valign="top">
-
-### Verification
-JUnit 5  
-Mockito  
-Testcontainers  
-Integration tests  
-CI/CD checks
-
-</td>
-</tr>
-</table>
+- **Edge and security:** the gateway handles routing, rate limits and request-level concerns; Spring Security handles authentication and authorization before protected business operations run.
+- **API boundary:** controllers accept DTOs, validation rejects invalid input early, and a global exception layer returns consistent API errors.
+- **Domain layer:** services own business rules, state transitions, transactions, idempotency and resource-level permission checks.
+- **Persistence:** repositories isolate JPA/Hibernate access; PostgreSQL or MySQL remains the source of truth, with Flyway owning schema evolution.
+- **Caching and coordination:** Redis is used for cache, session, rate-limit or short-lived coordination data where it adds value.
+- **Synchronous communication:** REST, gRPC or OpenFeign is used when the caller needs an immediate result.
+- **Asynchronous communication:** Kafka is used for decoupled work such as notifications, internal workflows and analytics; outbox/inbox, retry and dead-letter patterns are used when delivery guarantees matter.
+- **Files and integrations:** object storage, email, payment and other external APIs stay behind dedicated adapters/services instead of leaking into domain code.
+- **Configuration:** environment-specific settings stay outside business code through Spring profiles, environment variables and deployment secrets; centralized configuration is added only when the system actually needs it.
+- **Observability:** health/readiness, structured logs, metrics and tracing are part of operating the backend, not just debugging it locally.
+- **Delivery:** tests, migrations, containerization, CI/CD and post-deploy health checks are treated as part of the backend lifecycle.
 
 ---
 
