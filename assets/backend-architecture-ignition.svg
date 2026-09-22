@@ -34,7 +34,7 @@
   <text x="66" y="132">01 / INGRESS</text>
   <text x="355" y="132">02 / SECURITY</text>
   <text x="670" y="132">03 / DOMAIN</text>
-  <text x="1070" y="132">04 / EVENT & DATA PLANE</text>
+  <text x="1070" y="132">04 / EVENT &amp; DATA PLANE</text>
 </g>
 
 <!-- ingress card -->
@@ -94,7 +94,7 @@
 <!-- right plane -->
 <g filter="url(#shadow)">
   <rect x="1056" y="154" width="492" height="354" rx="18" fill="#FFFFFF" fill-opacity=".92" stroke="#BAD5E1"/>
-  <text x="1080" y="187" class="sans" font-size="18" font-weight="700" fill="#15324B">Event & Data Plane</text>
+  <text x="1080" y="187" class="sans" font-size="18" font-weight="700" fill="#15324B">Event &amp; Data Plane</text>
 
   <rect x="1080" y="222" width="136" height="72" rx="13" fill="#FFF7F1" stroke="#E3B087"/>
   <text x="1100" y="249" class="sans" font-size="14" font-weight="700" fill="#173F5F">Kafka Producer</text>
