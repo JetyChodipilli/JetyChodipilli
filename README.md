@@ -24,7 +24,7 @@ I build backend systems with **Java, Spring Boot, PostgreSQL, Kafka and Redis** 
 📍 **Hyderabad, India**  
 💼 **Open to Java Backend / Spring Boot opportunities**
 
-[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Repositories**](https://github.com/JetyChodipilli?tab=repositories)
+[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Repositories**](https://github.com/JetyChodipilli?tab=repositories) · [**Portfolio**](https://jetychportfolio.netlify.app/)
 
 </td>
 <td width="32%" align="center" valign="middle">
