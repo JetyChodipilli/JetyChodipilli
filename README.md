@@ -31,7 +31,7 @@ I build backend systems with **Java, Spring Boot, PostgreSQL, Kafka and Redis** 
 
 <img src="https://res.cloudinary.com/dtl11fi8q/image/upload/v1774869278/IMG_20260330_164201_qdj4z0.png" width="250" alt="Jety Chodipilli" />
 
-**Backend systems · security · data · messaging**
+**Backend Development · Security · System Design · Event Driven Architecture**
 
 </td>
 </tr>
