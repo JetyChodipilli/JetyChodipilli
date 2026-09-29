@@ -2,37 +2,29 @@
 <tr>
 <td width="68%" valign="middle">
 
-### Hi, I'm
-
 # Jety Chodipilli
 
-## Java Backend Developer · Spring Boot · System Design
+### Jr. Java Developer @ Brainserve Groups Pvt. Ltd.
+### Java Backend · Spring Boot · System Design
 
-I build backend applications with **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker**.
+I work on backend systems where the difficult part is keeping **security, workflow state, transactions, messaging and recovery** correct as the application grows.
 
-Most of my work involves secure APIs, role-based workflows, database-backed business logic, asynchronous processing and application reliability.
-
-<p>
-  <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-Backend-3F776B?style=flat-square&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-Data-315A75?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kafka-Events-315A75?style=flat-square&logo=apachekafka&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-State-A6533D?style=flat-square&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Delivery-315A75?style=flat-square&logo=docker&logoColor=white" />
-</p>
+My day-to-day stack is centered on **Java, Spring Boot, PostgreSQL, Kafka and Redis**. I also work with Spring Security, Flyway, Docker, Testcontainers and GitHub Actions.
 
 📍 **Hyderabad, India**  
-💼 **Open to Java Backend / Spring Boot opportunities**
+💼 **Current:** Jr. Java Developer, Brainserve Groups Pvt. Ltd.  
+🔎 **Open to:** Java Backend / Spring Boot opportunities
 
-[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 </td>
 <td width="32%" align="center" valign="middle">
 
 <img src="https://res.cloudinary.com/dtl11fi8q/image/upload/v1774869278/IMG_20260330_164201_qdj4z0.png" width="245" alt="Jety Chodipilli" />
 
-**Backend Engineering**  
-**Security · Workflows · Distributed Systems**
+**Java 17 / 21**  
+**Spring Boot · PostgreSQL**  
+**Kafka · Redis · Security**
 
 </td>
 </tr>
@@ -40,44 +32,61 @@ Most of my work involves secure APIs, role-based workflows, database-backed busi
 
 ---
 
-## What I Work On
+## Current work
 
-| Area | Experience from my projects |
-|---|---|
-| **Security** | Spring Security, JWT, RBAC, MFA, resource-level authorization |
-| **Workflow systems** | approval flows, lifecycle transitions, workflow versioning, audit history |
-| **Data** | PostgreSQL, JPA/Hibernate, transactions, Flyway migrations, idempotency |
-| **Messaging** | Kafka, asynchronous notifications, durable event processing |
-| **Application state** | Redis for OTPs, caching, rate limiting and short-lived state |
-| **Testing** | unit, integration, architecture and browser-level testing |
-| **Delivery** | Maven, Docker, GitHub Actions and deployable demo environments |
+At **Brainserve Groups Pvt. Ltd.**, I work on Java/Spring Boot application development and internal product engineering.
+
+The main system behind that work is **BrainServe Connect**, a visitor and workforce operations platform with role-based approvals, employee workflows, notifications, access control, reporting and audit history.
+
+The backend work includes:
+
+- Spring Security with JWT, role checks and resource-level authorization
+- PostgreSQL transactions and Flyway-managed schema changes
+- Redis for OTP state, rate limits and dashboard caching
+- Kafka for asynchronous internal-call delivery
+- transaction-aware notification and outbox processing
+- retry and recovery paths around database and service failures
+- QR visitor passes, check-in/check-out and audit history
+- pagination, bounded queries and concurrency protection
+- browser multi-tab coordination for live updates
+- health/readiness endpoints and operational diagnostics
+- automated source/regression and browser verification
 
 ---
 
-# Flagship · BrainServe Connect
+# BrainServe Connect
 
 ### Enterprise Visitor & Workforce Operations Platform
 
-[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Main Repository →**](https://github.com/JetyChodipilli/Brainserve-connect-Appointment-System)
+[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo Repository →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
 
-BrainServe Connect is my main backend project.
+The primary BrainServe Connect source repository is private. The public demo and implementation snapshot expose enough of the product and architecture to review the system without publishing the working production repository.
 
-It uses a **React/TypeScript frontend and Java 21 Spring Boot backend** to handle visitor intake, approvals, employee operations, notifications, reporting and audit history across multiple organizational roles.
+### Production stack
 
-### Backend details
+| Area | Implementation |
+|---|---|
+| **Backend** | Java 21, Spring Boot 3.5.7, Spring Modulith |
+| **Security** | Spring Security, JWT, role/scope checks |
+| **Data** | PostgreSQL 17.2, JPA/Hibernate, Flyway |
+| **State** | Redis 7.4.1 for OTPs, rate limits and dashboard caching |
+| **Messaging** | Apache Kafka 3.9.1, three-node KRaft cluster |
+| **Files** | S3-compatible storage, ClamAV scanning, controlled downloads |
+| **Operations** | Actuator, Micrometer, health/readiness endpoints |
+| **Delivery** | Maven, Docker, GitHub Actions |
 
-- **Java 21 · Spring Boot 3.5.7 · Spring Modulith**
-- **PostgreSQL 17.2** for application data
-- **3-node Kafka KRaft cluster** for internal-call delivery
-- **Redis 7.4.1** for OTP state, rate limits and dashboard caching
-- Spring Security with JWT and role/scope checks
-- Flyway database migrations
-- transactional email/outbox processing
-- private file storage with malware scanning and controlled downloads
-- health/readiness endpoints and metrics
-- verified snapshot: **263 Node source/regression tests passed, 0 failed**, with separate browser verification
+### Engineering details
 
-### Visitor flow
+- authorization and workflow state are enforced by the backend rather than UI controls
+- visitor and employee actions move through validated lifecycle transitions
+- Kafka work is kept outside the request transaction through durable messaging/outbox patterns
+- private uploads are scanned before they become available for controlled download
+- Redis has specific responsibilities: short-lived security state, rate limiting and scoped cache data
+- database reconnect and recovery behavior is treated as an application concern, not only an infrastructure concern
+- one browser tab owns background live updates while other tabs receive coordinated state
+- the verified application snapshot includes **263 passing Node source/regression tests**, with separate browser verification
+
+### Visitor path
 
 ```mermaid
 flowchart LR
@@ -89,132 +98,102 @@ flowchart LR
     F --> G["CEO Approval"]
     E --> H["Approved Pass"]
     G --> H
-    H --> I["Forward / Check-in"]
+    H --> I["Check-in"]
     I --> J["Check-out & Audit"]
 ```
 
-Authorization and workflow state are enforced by the backend rather than relying on UI controls.
-
 ---
 
-## Selected Projects
+## Client Onboarding Platform
 
-### Client Onboarding Platform
-**Multi-tenant onboarding · versioned workflows · client portal**
+**Multi-tenant onboarding · versioned workflows · secure assets · client portal**
 
-A Spring Boot modular monolith for managing organizations, clients, projects and onboarding workflows.
-
-Published workflow versions are immutable, so active onboarding runs keep the workflow version they started with even when templates are changed later.
-
-**Stack:** Java 17 · Spring Boot · Spring Security · PostgreSQL · Flyway · MFA · Testcontainers · ArchUnit
+[![CI](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml)
 
 [**Repository →**](https://github.com/JetyChodipilli/Client-Onboarding)
 
+A Spring Boot modular monolith for organizations, clients, projects and onboarding workflows.
+
+I kept it as one deployable backend on purpose. The hard problem here is not service-to-service networking; it is keeping tenancy, workflow definitions, active onboarding runs, permissions and audit history consistent while the product changes.
+
+Current public implementation includes:
+
+- tenant membership, RBAC, TOTP MFA and security audit records
+- clients, contacts, projects and lifecycle transitions
+- versioned workflow templates with immutable published versions
+- dependency graphs with cycle and invalid-edge rejection
+- client invitations, project grants and portal access
+- reusable questionnaires with review/revision history
+- private asset uploads with SHA-256/MIME validation and ClamAV scanning
+- Testcontainers, ArchUnit and browser-level verification
+
+The current main branch CI is green. The published Phase 6 verification records **55 backend tests, 12 frontend unit tests and 89 browser scenarios passing**.
+
+The design decision I care about most in this project: an onboarding run keeps the exact workflow version it started with. Editing a template later cannot silently rewrite an active customer's process.
+
 ---
 
-### SeatEngine
-**Distributed booking · locking · idempotency**
+## SeatEngine / SeatSure
 
-A movie-booking backend focused on seat locking, booking consistency and payment flow.
-
-**Stack:** Spring Boot · Redis/JPA locking · JWT gateway security · Kafka outbox events · idempotent booking/payment
+**Distributed booking · locking · idempotency · event delivery**
 
 [**Repository →**](https://github.com/JetyChodipilli/SeatEngine)
 
+A booking-system project used to work through concurrency and failure cases rather than only the booking happy path.
+
+- Redis, pessimistic JPA and optimistic JPA locking strategies
+- database-enforced idempotency for booking/payment operations
+- payment saga with compensating hold release
+- transactional outbox and Kafka delivery
+- consumer deduplication and dead-letter topics
+- Resilience4j, health metrics and distributed tracing
+
+I keep this as a supporting architecture project rather than treating it as production evidence.
+
 ---
 
-### OpsHub
-**Workforce operations · modular architecture · event processing**
-
-A modular Spring Boot project for workforce and operational workflows.
-
-**Stack:** PostgreSQL · Kafka outbox/inbox patterns · Redis · resource-scoped authorization
-
-[**Repository →**](https://github.com/JetyChodipilli/OpsHub)
-
----
+## Earlier microservices work
 
 ### Healthcare Patient Management System
-**Microservices learning project**
-
-A course-based project I used to practice service-to-service communication across Patient, Billing, Analytics, Auth and API Gateway services.
-
-**Stack:** Spring Boot · Spring Cloud Gateway · gRPC · Protocol Buffers · Kafka · JWT · PostgreSQL · Docker
 
 [**Repository →**](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice)
 
----
+A **course-based learning project** I used to practice Spring Boot microservices, Spring Cloud Gateway, Kafka, gRPC, Protocol Buffers, JWT and PostgreSQL.
 
-## Backend Practices I Follow
-
-- authorization checks are enforced on the backend
-- transaction boundaries are kept around related business changes
-- database migrations are versioned with Flyway
-- workflow state changes are stored with audit history where required
-- Kafka is used for work that benefits from asynchronous processing
-- Redis is used for short-lived state, caching and coordination where needed
-- retries and recovery paths are handled for network and service failures
-- unit tests are supported by integration, architecture and browser-level tests
+I label it as learning work intentionally. BrainServe Connect and Client Onboarding are better examples of my own architecture and implementation decisions.
 
 ---
 
-## Core Stack
+## Stack I use
 
-| Area | Technologies I use |
+| Area | Technologies |
 |---|---|
 | **Java & Spring** | Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring Modulith |
-| **Architecture** | REST APIs, modular monoliths, microservices, event-driven systems |
+| **Architecture** | REST APIs, modular monoliths, microservices, event-driven workflows |
 | **Data** | PostgreSQL, MySQL, Flyway |
-| **Messaging & State** | Apache Kafka, Redis |
-| **Security** | JWT, RBAC, MFA, BCrypt, request validation |
-| **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration testing |
+| **Messaging & state** | Apache Kafka, Redis |
+| **Security** | JWT, RBAC, MFA, BCrypt, resource-level authorization |
+| **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration and browser testing |
 | **Delivery** | Maven, Docker, GitHub Actions |
 | **Communication** | gRPC, Protocol Buffers |
-| **Integration** | AWS SES |
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,githubactions,maven,git" alt="Core backend stack" />
-</p>
+| **Integration** | AWS SES, S3-compatible storage |
 
 ---
 
-## More Backend Repositories
+## More public backend work
 
 | Repository | Focus |
 |---|---|
 | [Payment Processing Microservice](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | payment integration and persistence |
-| [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | email delivery with AWS SES |
+| [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | transactional email integration |
 | [Employee Management System](https://github.com/JetyChodipilli/EmployeeManagementSystem) | employee records, uploads and reporting |
 | [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | batch processing |
 | [Spring Boot File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | file-processing APIs |
-| [API Gateway Realtime Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | gateway and distributed application practice |
-
----
-
-## ORCID
-
-<a href="https://orcid.org/0009-0008-8585-051X">
-  <img src="https://img.shields.io/badge/ORCID-0009--0008--8585--051X-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID 0009-0008-8585-051X" />
-</a>
-
-I use ORCID for technical publications, research work and other citable work. GitHub is where I keep my source code.
-
----
-
-## Contribution Activity
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
-    <img width="100%" alt="GitHub contribution activity" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
-  </picture>
-</p>
 
 ---
 
 ## Connect
 
-[**GitHub**](https://github.com/JetyChodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 **Java Backend · Spring Boot · Security · System Design**
