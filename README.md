@@ -8,6 +8,8 @@
 
 ## Java Backend Developer · Spring Boot · System Design
 
+**Jr. Java Developer @ Brainserve Groups Pvt. Ltd.**
+
 I build backend applications with **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker**.
 
 Most of my work involves secure APIs, role-based workflows, database-backed business logic, asynchronous processing and application reliability.
@@ -22,9 +24,10 @@ Most of my work involves secure APIs, role-based workflows, database-backed busi
 </p>
 
 📍 **Hyderabad, India**  
-💼 **Open to Java Backend / Spring Boot opportunities**
+💼 **Current:** Jr. Java Developer @ Brainserve Groups Pvt. Ltd.  
+🔎 **Open to Java Backend / Spring Boot opportunities**
 
-[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 </td>
 <td width="32%" align="center" valign="middle">
@@ -58,9 +61,11 @@ Most of my work involves secure APIs, role-based workflows, database-backed busi
 
 ### Enterprise Visitor & Workforce Operations Platform
 
-[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Main Repository →**](https://github.com/JetyChodipilli/Brainserve-connect-Appointment-System)
+[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
 
-BrainServe Connect is my main backend project.
+BrainServe Connect is my main backend project and the system I work on at Brainserve Groups.
+
+The primary working repository is private. The public demo and implementation snapshot expose the product flow and architecture without publishing the production codebase.
 
 It uses a **React/TypeScript frontend and Java 21 Spring Boot backend** to handle visitor intake, approvals, employee operations, notifications, reporting and audit history across multiple organizational roles.
 
@@ -100,11 +105,17 @@ Authorization and workflow state are enforced by the backend rather than relying
 ## Selected Projects
 
 ### Client Onboarding Platform
-**Multi-tenant onboarding · versioned workflows · client portal**
+**Multi-tenant onboarding · versioned workflows · secure assets · client portal**
+
+[![Client Onboarding CI](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml)
 
 A Spring Boot modular monolith for managing organizations, clients, projects and onboarding workflows.
 
 Published workflow versions are immutable, so active onboarding runs keep the workflow version they started with even when templates are changed later.
+
+The current public implementation includes tenant RBAC, TOTP MFA, secure client invitations, questionnaires, private asset uploads, ClamAV scanning and architecture verification with Testcontainers and ArchUnit.
+
+**Verified Phase 6 gate:** 55 backend tests · 12 frontend unit tests · 89 browser scenarios passed.
 
 **Stack:** Java 17 · Spring Boot · Spring Security · PostgreSQL · Flyway · MFA · Testcontainers · ArchUnit
 
@@ -117,20 +128,11 @@ Published workflow versions are immutable, so active onboarding runs keep the wo
 
 A movie-booking backend focused on seat locking, booking consistency and payment flow.
 
+The project explores Redis/JPA locking, database-backed idempotency, payment compensation, Kafka outbox delivery, consumer deduplication and dead-letter handling.
+
 **Stack:** Spring Boot · Redis/JPA locking · JWT gateway security · Kafka outbox events · idempotent booking/payment
 
 [**Repository →**](https://github.com/JetyChodipilli/SeatEngine)
-
----
-
-### OpsHub
-**Workforce operations · modular architecture · event processing**
-
-A modular Spring Boot project for workforce and operational workflows.
-
-**Stack:** PostgreSQL · Kafka outbox/inbox patterns · Redis · resource-scoped authorization
-
-[**Repository →**](https://github.com/JetyChodipilli/OpsHub)
 
 ---
 
@@ -215,6 +217,6 @@ I use ORCID for technical publications, research work and other citable work. Gi
 
 ## Connect
 
-[**GitHub**](https://github.com/JetyChodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**GitHub**](https://github.com/JetyChodipilli) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 **Java Backend · Spring Boot · Security · System Design**
