@@ -8,24 +8,23 @@
 
 ## Java Backend Developer · Spring Boot · System Design
 
-**Jr. Java Developer @ Brainserve Groups Pvt. Ltd.**
+I build backend applications with **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker**.
 
-I work on backend systems where **security, workflow state, transactions, messaging and recovery** matter as much as the API itself.
+Most of my work involves secure APIs, role-based workflows, database-backed business logic, asynchronous processing and application reliability.
 
 <p>
-  <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17 and 21" />
-  <img src="https://img.shields.io/badge/Spring_Boot-Backend-3F776B?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
-  <img src="https://img.shields.io/badge/PostgreSQL-Data-315A75?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-  <img src="https://img.shields.io/badge/Kafka-Events-315A75?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka" />
-  <img src="https://img.shields.io/badge/Redis-State-A6533D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
-  <img src="https://img.shields.io/badge/Docker-Delivery-315A75?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-Backend-3F776B?style=flat-square&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-Data-315A75?style=flat-square&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kafka-Events-315A75?style=flat-square&logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-State-A6533D?style=flat-square&logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-Delivery-315A75?style=flat-square&logo=docker&logoColor=white" />
 </p>
 
 📍 **Hyderabad, India**  
-💼 **Current:** Brainserve Groups Pvt. Ltd.  
-🔎 **Open to Java Backend / Spring Boot opportunities**
+💼 **Open to Java Backend / Spring Boot opportunities**
 
-[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 </td>
 <td width="32%" align="center" valign="middle">
@@ -41,40 +40,17 @@ I work on backend systems where **security, workflow state, transactions, messag
 
 ---
 
-## What I work on
+## What I Work On
 
-| Area | What that means in my projects |
+| Area | Experience from my projects |
 |---|---|
 | **Security** | Spring Security, JWT, RBAC, MFA, resource-level authorization |
-| **Workflow systems** | approval chains, lifecycle transitions, versioned workflows, audit history |
-| **Data consistency** | PostgreSQL, JPA/Hibernate, transactions, Flyway, idempotency |
-| **Messaging** | Kafka, transactional outbox, asynchronous notifications, consumer deduplication |
-| **Application state** | Redis for OTPs, caching, rate limits and short-lived coordination |
-| **Reliability** | retry/recovery paths, health checks, readiness and bounded queries |
-| **Testing** | unit, integration, architecture, regression and browser-level verification |
-
----
-
-# Current Role · Brainserve Groups
-
-### Jr. Java Developer
-
-Most of my current engineering work is centered on **BrainServe Connect**, an enterprise visitor and workforce operations platform.
-
-The system covers visitor intake, employee operations, organizational approvals, QR-based access, notifications, reporting and audit history across multiple roles.
-
-My backend work includes:
-
-- Java 21, Spring Boot, Spring Data JPA and Hibernate
-- Spring Security with JWT, role and resource-scope checks
-- PostgreSQL transactions and Flyway-managed schema changes
-- Redis for OTP state, rate limits and dashboard caching
-- Kafka for asynchronous internal-call and notification workflows
-- transactional notification/outbox processing
-- retry and recovery behavior around database and service failures
-- concurrency protection, pagination and bounded queries
-- browser multi-tab coordination for live updates
-- health/readiness endpoints and operational diagnostics
+| **Workflow systems** | approval flows, lifecycle transitions, workflow versioning, audit history |
+| **Data** | PostgreSQL, JPA/Hibernate, transactions, Flyway migrations, idempotency |
+| **Messaging** | Kafka, asynchronous notifications, durable event processing |
+| **Application state** | Redis for OTPs, caching, rate limiting and short-lived state |
+| **Testing** | unit, integration, architecture and browser-level testing |
+| **Delivery** | Maven, Docker, GitHub Actions and deployable demo environments |
 
 ---
 
@@ -82,46 +58,24 @@ My backend work includes:
 
 ### Enterprise Visitor & Workforce Operations Platform
 
-[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack) · [**Interactive GitDiagram →**](https://gitdiagram.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
+[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Main Repository →**](https://github.com/JetyChodipilli/Brainserve-connect-Appointment-System)
 
-<p>
-  <a href="https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml">
-    <img src="https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml/badge.svg" alt="BrainServe public snapshot CI" />
-  </a>
-</p>
+BrainServe Connect is my main backend project.
 
-The primary working repository is private. The public demo and implementation snapshot expose the product flow and architecture without publishing the production codebase.
+It uses a **React/TypeScript frontend and Java 21 Spring Boot backend** to handle visitor intake, approvals, employee operations, notifications, reporting and audit history across multiple organizational roles.
 
-### System architecture
+### Backend details
 
-<a href="https://gitdiagram.com/JetyChodipilli/V2_Brainserve_Connect_gstack">
-  <img src="./assets/brainserve-architecture.svg" width="100%" alt="BrainServe Connect architecture showing the React workspace, Spring Security, workplace and visitor operations, PostgreSQL, Redis, Kafka, ClamAV, audit records, SMTP and object storage" />
-</a>
-
-<sub>Profile-sized architecture view based on the same module boundaries in my GitDiagram view. Click the diagram for the interactive public snapshot.</sub>
-
-### Production stack
-
-| Layer | Technology |
-|---|---|
-| **Backend** | Java 21 · Spring Boot 3.5.7 · Spring Modulith |
-| **Security** | Spring Security · JWT · role/scope authorization |
-| **Data** | PostgreSQL 17.2 · JPA/Hibernate · Flyway |
-| **State** | Redis 7.4.1 · OTPs · rate limits · dashboard caching |
-| **Messaging** | Apache Kafka 3.9.1 · three-node KRaft cluster |
-| **Files** | S3-compatible storage · ClamAV · controlled downloads |
-| **Operations** | Actuator · Micrometer · health/readiness endpoints |
-| **Delivery** | Maven · Docker · GitHub Actions |
-
-### Engineering details
-
-- authorization and workflow state are enforced in the backend rather than relying on UI controls
-- lifecycle transitions are validated before state changes are committed
-- asynchronous work is separated from request transactions through durable messaging/outbox patterns
-- uploaded files are scanned before controlled download
-- database reconnect and recovery behavior is handled as part of the application
-- one browser tab owns background live updates while other tabs receive coordinated state
-- the verified application snapshot includes **263 passing Node source/regression tests**, with separate browser verification
+- **Java 21 · Spring Boot 3.5.7 · Spring Modulith**
+- **PostgreSQL 17.2** for application data
+- **3-node Kafka KRaft cluster** for internal-call delivery
+- **Redis 7.4.1** for OTP state, rate limits and dashboard caching
+- Spring Security with JWT and role/scope checks
+- Flyway database migrations
+- transactional email/outbox processing
+- private file storage with malware scanning and controlled downloads
+- health/readiness endpoints and metrics
+- verified snapshot: **263 Node source/regression tests passed, 0 failed**, with separate browser verification
 
 ### Visitor flow
 
@@ -135,145 +89,125 @@ flowchart LR
     F --> G["CEO Approval"]
     E --> H["Approved Pass"]
     G --> H
-    H --> I["Check-in"]
+    H --> I["Forward / Check-in"]
     I --> J["Check-out & Audit"]
 ```
 
+Authorization and workflow state are enforced by the backend rather than relying on UI controls.
+
 ---
 
-## Selected Engineering Work
+## Selected Projects
 
 ### Client Onboarding Platform
+**Multi-tenant onboarding · versioned workflows · client portal**
 
-**Multi-tenant onboarding · versioned workflows · secure assets · client portal**
+A Spring Boot modular monolith for managing organizations, clients, projects and onboarding workflows.
 
-[![Client Onboarding CI](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml)
+Published workflow versions are immutable, so active onboarding runs keep the workflow version they started with even when templates are changed later.
+
+**Stack:** Java 17 · Spring Boot · Spring Security · PostgreSQL · Flyway · MFA · Testcontainers · ArchUnit
 
 [**Repository →**](https://github.com/JetyChodipilli/Client-Onboarding)
 
-A Spring Boot modular monolith for organizations, clients, projects and onboarding workflows.
-
-I kept it as one deployable backend on purpose. The harder problem here is keeping tenancy, workflow definitions, active onboarding runs, permissions and audit history consistent while the product changes.
-
-**Implemented publicly:**
-
-- RBAC, TOTP MFA and security audit records
-- clients, projects and lifecycle transitions
-- immutable published workflow versions
-- dependency graphs with cycle and invalid-edge rejection
-- secure invitations and explicit project grants
-- questionnaires with review/revision history
-- private asset uploads with SHA-256/MIME validation and ClamAV scanning
-- Testcontainers, ArchUnit and browser verification
-
-The current main branch CI is green. The published Phase 6 verification records **55 backend tests, 12 frontend unit tests and 89 browser scenarios passing**.
-
-> An onboarding run keeps the workflow version it started with. Editing a template later cannot silently rewrite an active customer's process.
-
 ---
 
-### SeatEngine / SeatSure
+### SeatEngine
+**Distributed booking · locking · idempotency**
 
-**Distributed booking · locking · idempotency · event delivery**
+A movie-booking backend focused on seat locking, booking consistency and payment flow.
+
+**Stack:** Spring Boot · Redis/JPA locking · JWT gateway security · Kafka outbox events · idempotent booking/payment
 
 [**Repository →**](https://github.com/JetyChodipilli/SeatEngine)
 
-A booking-system project I use to work through concurrency and failure cases:
+---
 
-- Redis, pessimistic JPA and optimistic JPA locking
-- database-enforced idempotency
-- booking/payment consistency and compensation
-- transactional outbox and Kafka delivery
-- consumer deduplication and dead-letter topics
-- Resilience4j, metrics and distributed tracing
+### OpsHub
+**Workforce operations · modular architecture · event processing**
 
-The key problem is simple to state: **if several users request the same seat, only one booking should succeed.**
+A modular Spring Boot project for workforce and operational workflows.
 
-I keep this as supporting architecture work rather than presenting it as production evidence.
+**Stack:** PostgreSQL · Kafka outbox/inbox patterns · Redis · resource-scoped authorization
+
+[**Repository →**](https://github.com/JetyChodipilli/OpsHub)
 
 ---
 
 ### Healthcare Patient Management System
-
 **Microservices learning project**
+
+A course-based project I used to practice service-to-service communication across Patient, Billing, Analytics, Auth and API Gateway services.
+
+**Stack:** Spring Boot · Spring Cloud Gateway · gRPC · Protocol Buffers · Kafka · JWT · PostgreSQL · Docker
 
 [**Repository →**](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice)
 
-A course-based project I used to practice Spring Boot microservices, Spring Cloud Gateway, Kafka, gRPC, Protocol Buffers, JWT and PostgreSQL.
+---
 
-I label it as learning work intentionally. BrainServe Connect and Client Onboarding are better examples of my own architecture and implementation decisions.
+## Backend Practices I Follow
+
+- authorization checks are enforced on the backend
+- transaction boundaries are kept around related business changes
+- database migrations are versioned with Flyway
+- workflow state changes are stored with audit history where required
+- Kafka is used for work that benefits from asynchronous processing
+- Redis is used for short-lived state, caching and coordination where needed
+- retries and recovery paths are handled for network and service failures
+- unit tests are supported by integration, architecture and browser-level tests
 
 ---
 
-## Core stack
-
-<p align="center">
-  <img height="46" title="Java" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Spring" alt="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="PostgreSQL" alt="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Apache Kafka" alt="Apache Kafka" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Redis" alt="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Docker" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="GitHub Actions" alt="GitHub Actions" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Maven" alt="Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" />
-  &nbsp;&nbsp;&nbsp;
-  <img height="46" title="Git" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" />
-</p>
+## Core Stack
 
 | Area | Technologies I use |
 |---|---|
 | **Java & Spring** | Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring Modulith |
-| **Architecture** | REST APIs, modular monoliths, microservices, event-driven workflows |
+| **Architecture** | REST APIs, modular monoliths, microservices, event-driven systems |
 | **Data** | PostgreSQL, MySQL, Flyway |
 | **Messaging & State** | Apache Kafka, Redis |
-| **Security** | JWT, RBAC, MFA, BCrypt, resource-level authorization |
-| **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration and browser testing |
+| **Security** | JWT, RBAC, MFA, BCrypt, request validation |
+| **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration testing |
 | **Delivery** | Maven, Docker, GitHub Actions |
 | **Communication** | gRPC, Protocol Buffers |
-| **Integration** | AWS SES, S3-compatible storage |
+| **Integration** | AWS SES |
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,githubactions,maven,git" alt="Core backend stack" />
+</p>
 
 ---
 
-## More public backend work
+## More Backend Repositories
 
 | Repository | Focus |
 |---|---|
 | [Payment Processing Microservice](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | payment integration and persistence |
-| [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | transactional email integration |
+| [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | email delivery with AWS SES |
 | [Employee Management System](https://github.com/JetyChodipilli/EmployeeManagementSystem) | employee records, uploads and reporting |
 | [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | batch processing |
 | [Spring Boot File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | file-processing APIs |
+| [API Gateway Realtime Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | gateway and distributed application practice |
 
 ---
 
-## Engineering notes
+## ORCID
 
-A few rules I try to keep consistent across projects:
+<a href="https://orcid.org/0009-0008-8585-051X">
+  <img src="https://img.shields.io/badge/ORCID-0009--0008--8585--051X-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID 0009-0008-8585-051X" />
+</a>
 
-- authorization belongs on the backend
-- transaction boundaries should follow business changes, not controller methods
-- asynchronous infrastructure should solve a real workload problem
-- retries need a recovery model; blind retries are not a strategy
-- idempotency matters anywhere a request can safely arrive twice
-- schema changes belong in versioned migrations
-- tests should cover boundaries and failure paths, not only happy-path methods
+I use ORCID for technical publications, research work and other citable work. GitHub is where I keep my source code.
 
 ---
 
-## Contribution activity
+## Contribution Activity
 
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
-    <img width="100%" alt="GitHub contribution activity snake" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
+    <img width="100%" alt="GitHub contribution activity" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
   </picture>
 </p>
 
@@ -281,6 +215,6 @@ A few rules I try to keep consistent across projects:
 
 ## Connect
 
-[**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**GitHub**](https://github.com/JetyChodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 **Java Backend · Spring Boot · Security · System Design**
