@@ -163,43 +163,125 @@ A course-based project I used to practice service-to-service communication acros
 
 ---
 
-## Backend Stack
+## Backend Engineering Stack
 
-| Area | Technologies I use |
-|---|---|
-| **Java & Spring** | Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring Modulith |
-| **API & architecture** | REST APIs, modular monoliths, microservices, event-driven systems |
-| **Persistence** | PostgreSQL, MySQL, JPA/Hibernate, Flyway |
-| **Messaging & state** | Apache Kafka, Redis, transactional outbox patterns |
-| **Security** | JWT, RBAC, MFA, BCrypt, request validation, resource-level authorization |
-| **Reliability & concurrency** | idempotency, optimistic/pessimistic locking, retries, recovery paths |
-| **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration testing |
-| **Observability** | Spring Boot Actuator, Micrometer, health/readiness endpoints |
-| **Delivery** | Maven, Docker, GitHub Actions |
-| **Service communication** | REST, gRPC, Protocol Buffers |
-| **External integration** | AWS SES, S3-compatible storage |
+A recruiter-sized view of the technologies and engineering areas I work with most often.
 
-<p align="center">
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="Java" title="Java" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring" title="Spring" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="Redis" title="Redis" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" title="Apache Kafka" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" alt="Maven" title="Maven" />
-  &nbsp;&nbsp;
-  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" alt="Git" title="Git" />
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### Java & Spring
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="Java" title="Java 17/21" />
+  &nbsp;
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring" title="Spring Boot" />
 </p>
+
+**Java 17/21 · Spring Boot · Spring Security**  
+Spring Data JPA · Hibernate · Spring Modulith
+
+REST APIs · validation · business workflows · modular design
+
+</td>
+<td width="50%" valign="top">
+
+### Data
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
+  &nbsp;
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+</p>
+
+**PostgreSQL · MySQL · Flyway**
+
+transactions · schema migrations · persistence · indexing
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### Messaging & State
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" title="Apache Kafka" />
+  &nbsp;
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="Redis" title="Redis" />
+</p>
+
+**Apache Kafka · Redis**
+
+transactional outbox · event delivery · caching · rate limits · idempotency
+
+</td>
+<td width="50%" valign="top">
+
+### Security
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring Security" title="Spring Security" />
+</p>
+
+**Spring Security · JWT · RBAC · MFA**
+
+resource-level authorization · backend-enforced access control
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### Testing
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/junit/junit-original.svg" alt="JUnit" title="JUnit 5" />
+</p>
+
+**JUnit 5 · Mockito · Testcontainers · ArchUnit**
+
+unit · integration · architecture · browser-level verification
+
+</td>
+<td width="50%" valign="top">
+
+### Delivery & Observability
+
+<p>
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" alt="Maven" title="Maven" />
+  &nbsp;
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+  &nbsp;
+  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" />
+</p>
+
+**Maven · Docker · GitHub Actions**
+
+Actuator · Micrometer · health/readiness · CI/CD
+
+</td>
+</tr>
+
+<tr>
+<td colspan="2" valign="top">
+
+### Architecture
+
+**REST APIs · Modular Monoliths · Microservices · gRPC · Protocol Buffers**
+
+concurrency · transaction boundaries · workflow design · system design · recovery
+
+</td>
+</tr>
+</table>
+
+#### Typical backend flow
+
+`Client / Frontend` → `Spring Boot API` → `Security` → `Business Logic` → `PostgreSQL / Redis` → `Kafka` → `External Services`
 
 ---
 
