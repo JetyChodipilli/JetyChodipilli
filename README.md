@@ -43,21 +43,9 @@ My day-to-day stack is **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker*
 
 ---
 
-## Backend Engineering Focus
 
-| Focus | Working areas |
-|---|---|
-| **Security** | Spring Security, JWT, RBAC, MFA, resource-level authorization |
-| **Workflow design** | approval chains, lifecycle transitions, workflow versioning, audit history |
-| **Data & transactions** | PostgreSQL, JPA/Hibernate, transaction boundaries, Flyway migrations |
-| **Messaging** | Kafka, transactional outbox, asynchronous notifications, durable event delivery |
-| **State & coordination** | Redis for OTPs, caching, rate limiting and short-lived state |
-| **Reliability** | idempotency, retries, recovery paths, concurrency handling and bounded queries |
-| **Verification & delivery** | unit, integration, architecture and browser testing; Maven, Docker and GitHub Actions |
 
----
-
-# Flagship · BrainServe Connect
+# Current Engineering Work · BrainServe Connect
 
 ### Enterprise Visitor & Workforce Operations Platform
 
@@ -65,9 +53,9 @@ My day-to-day stack is **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker*
 
 [![BrainServe Snapshot CI](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml)
 
-BrainServe Connect is my main backend project and the system I work on at Brainserve Groups.
+BrainServe Connect is the main system I work on at Brainserve Groups.
 
-The primary working repository is private. The public demo and implementation snapshot expose the product flow and architecture without publishing the production codebase.
+The working repository is private; the public demo and implementation snapshot provide reviewable product and architecture evidence without exposing the production codebase.
 
 It uses a **React/TypeScript frontend and Java 21 Spring Boot backend** to handle visitor intake, approvals, employee operations, notifications, reporting and audit history across multiple organizational roles.
 
@@ -82,7 +70,7 @@ It uses a **React/TypeScript frontend and Java 21 Spring Boot backend** to handl
 - transactional email/outbox processing
 - private file storage with malware scanning and controlled downloads
 - health/readiness endpoints and metrics
-- verified snapshot: **263 Node source/regression tests passed, 0 failed**, with separate browser verification
+- verified snapshot: **263 automated source/regression checks passed**, with separate browser verification
 
 ### Visitor flow
 
@@ -138,19 +126,6 @@ The project explores Redis, pessimistic and optimistic JPA locking, database-bac
 
 [**Repository →**](https://github.com/JetyChodipilli/SeatEngine)
 
----
-
-### Healthcare Patient Management System
-**Microservices learning project**
-
-A course-based project I used to practice service-to-service communication across Patient, Billing, Analytics, Auth and API Gateway services.
-
-**Stack:** Spring Boot · Spring Cloud Gateway · gRPC · Protocol Buffers · Kafka · JWT · PostgreSQL · Docker
-
-[**Repository →**](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice)
-
----
-
 ## Backend Decisions I Care About
 
 - authorization is enforced server-side; hiding a control in the UI is not a security boundary
@@ -165,7 +140,7 @@ A course-based project I used to practice service-to-service communication acros
 
 ## Backend Engineering Stack
 
-A recruiter-sized view of the technologies and engineering areas I work with most often.
+Technologies and engineering areas I use most often in backend application work.
 
 <table>
 <tr>
@@ -289,6 +264,7 @@ concurrency · transaction boundaries · workflow design · system design · rec
 
 | Repository | Focus |
 |---|---|
+| [Healthcare Patient Management System](https://github.com/JetyChodipilli/Healthcare-Patient-Management-System-Microservice) | microservices learning build using Spring Boot, Kafka, gRPC, JWT, PostgreSQL and Docker |
 | [Payment Processing Microservice](https://github.com/JetyChodipilli/Payment-Processing-Microservice-with-Stripe-and-MySQL) | payment integration and persistence |
 | [AWS SES Email Service](https://github.com/JetyChodipilli/AWS-SES-EmailSend-SpringBoot) | email delivery with AWS SES |
 | [Employee Management System](https://github.com/JetyChodipilli/EmployeeManagementSystem) | employee records, uploads and reporting |
