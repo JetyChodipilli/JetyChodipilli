@@ -63,6 +63,8 @@ My day-to-day stack is **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker*
 
 [**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
 
+[![BrainServe Snapshot CI](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml)
+
 BrainServe Connect is my main backend project and the system I work on at Brainserve Groups.
 
 The primary working repository is private. The public demo and implementation snapshot expose the product flow and architecture without publishing the production codebase.
@@ -102,16 +104,18 @@ Authorization and workflow state are enforced by the backend rather than relying
 
 ---
 
-## Selected Projects
+## Selected Engineering Work
 
 ### Client Onboarding Platform
 **Multi-tenant onboarding · versioned workflows · secure assets · client portal**
 
 [![Client Onboarding CI](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml/badge.svg)](https://github.com/JetyChodipilli/Client-Onboarding/actions/workflows/ci.yml)
 
-A Spring Boot modular monolith for managing organizations, clients, projects and onboarding workflows.
+A Spring Boot modular monolith for organizations, clients, projects and onboarding workflows.
 
-Published workflow versions are immutable, so active onboarding runs keep the workflow version they started with even when templates are changed later.
+I kept the backend as one deployable application deliberately: the harder problem here is maintaining tenant boundaries, workflow state and audit history consistently while the product evolves.
+
+Published workflow versions are immutable, so active onboarding runs keep the exact version they started with even when templates change later.
 
 The current public implementation includes tenant RBAC, TOTP MFA, secure client invitations, questionnaires, private asset uploads, ClamAV scanning and architecture verification with Testcontainers and ArchUnit.
 
@@ -123,12 +127,12 @@ The current public implementation includes tenant RBAC, TOTP MFA, secure client 
 
 ---
 
-### SeatEngine
+### SeatEngine / SeatSure
 **Distributed booking · locking · idempotency**
 
-A movie-booking backend focused on seat locking, booking consistency and payment flow.
+A booking-system project focused on one concrete concurrency problem: multiple users can request the same limited resource, but only one booking should win.
 
-The project explores Redis/JPA locking, database-backed idempotency, payment compensation, Kafka outbox delivery, consumer deduplication and dead-letter handling.
+The project explores Redis, pessimistic and optimistic JPA locking, database-backed idempotency, payment compensation, Kafka outbox delivery, consumer deduplication and dead-letter handling.
 
 **Stack:** Spring Boot · Redis/JPA locking · JWT gateway security · Kafka outbox events · idempotent booking/payment
 
@@ -208,7 +212,6 @@ A course-based project I used to practice service-to-service communication acros
 | [Employee Management System](https://github.com/JetyChodipilli/EmployeeManagementSystem) | employee records, uploads and reporting |
 | [Spring Batch Processing](https://github.com/JetyChodipilli/Spring-Batch-Processing) | batch processing |
 | [Spring Boot File Processing API](https://github.com/JetyChodipilli/Spring-Boot-File-Processing-API) | file-processing APIs |
-| [API Gateway Realtime Project](https://github.com/JetyChodipilli/API-Gateway-Realtime-Project) | gateway and distributed application practice |
 
 ---
 
