@@ -140,47 +140,68 @@ The project explores Redis, pessimistic and optimistic JPA locking, database-bac
 
 ## Backend Engineering Stack
 
-The tools I use most often to build, secure, test and operate backend applications.
+The tools and engineering areas I use across current and supporting backend work.
 
 ### Core Backend
 
 <p>
   <img src="https://img.shields.io/badge/Java_17%2F21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17/21" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC" />
   <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security" />
   <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Data JPA" />
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate" />
   <img src="https://img.shields.io/badge/Spring_Modulith-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Modulith" />
+  <img src="https://img.shields.io/badge/Bean_Validation-44546A?style=flat-square" alt="Bean Validation" />
 </p>
 
 ### Data · Messaging · State
 
 <p>
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
   <img src="https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white" alt="Flyway" />
   <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Redisson-DC382D?style=flat-square" alt="Redisson" />
 </p>
 
-### Security · Testing · Delivery
+### Security · API
 
 <p>
+  <img src="https://img.shields.io/badge/OAuth2_Resource_Server-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="OAuth2 Resource Server" />
   <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
   <img src="https://img.shields.io/badge/RBAC-44546A?style=flat-square" alt="RBAC" />
-  <img src="https://img.shields.io/badge/MFA-44546A?style=flat-square" alt="MFA" />
+  <img src="https://img.shields.io/badge/MFA%2FTOTP-44546A?style=flat-square" alt="MFA and TOTP" />
+  <img src="https://img.shields.io/badge/BCrypt-44546A?style=flat-square" alt="BCrypt" />
+  <img src="https://img.shields.io/badge/OpenAPI-6BA539?style=flat-square&logo=openapiinitiative&logoColor=white" alt="OpenAPI" />
+</p>
+
+### Testing · Delivery
+
+<p>
   <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" alt="JUnit 5" />
   <img src="https://img.shields.io/badge/Mockito-78A641?style=flat-square" alt="Mockito" />
   <img src="https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Testcontainers" />
   <img src="https://img.shields.io/badge/ArchUnit-4C566A?style=flat-square" alt="ArchUnit" />
   <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker Compose" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
+### Reliability · Observability
+
+**Resilience4j · Spring Boot Actuator · Micrometer · Prometheus · Zipkin · Grafana**
+
+### Integration · Service Communication
+
+**AWS SES · S3-compatible object storage · ClamAV · OpenFeign · gRPC · Protocol Buffers**
+
 ### Engineering Areas
 
-**REST APIs · transaction boundaries · workflow design · idempotency · concurrency · transactional outbox · retries & recovery · health/readiness · system design**
+**REST APIs · transaction boundaries · workflow design · idempotency · concurrency & locking · transactional outbox · event-driven processing · retries & recovery · rate limiting · health/readiness · system design**
 
 #### Typical Backend Flow
 
