@@ -10,15 +10,15 @@
 
 **Jr. Java Developer @ Brainserve Groups Pvt. Ltd.**
 
-I build backend systems around **security, workflow state, transactions, messaging and recovery** — not just endpoints.
+I work on backend systems where **security, workflow state, transactions, messaging and recovery** matter as much as the API itself.
 
 <p>
-  <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-Backend-3F776B?style=flat-square&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-Data-315A75?style=flat-square&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kafka-Events-315A75?style=flat-square&logo=apachekafka&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-State-A6533D?style=flat-square&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-Delivery-315A75?style=flat-square&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17 and 21" />
+  <img src="https://img.shields.io/badge/Spring_Boot-Backend-3F776B?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/PostgreSQL-Data-315A75?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Kafka-Events-315A75?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka" />
+  <img src="https://img.shields.io/badge/Redis-State-A6533D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
+  <img src="https://img.shields.io/badge/Docker-Delivery-315A75?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
 </p>
 
 📍 **Hyderabad, India**  
@@ -50,7 +50,7 @@ I build backend systems around **security, workflow state, transactions, messagi
 | **Data consistency** | PostgreSQL, JPA/Hibernate, transactions, Flyway, idempotency |
 | **Messaging** | Kafka, transactional outbox, asynchronous notifications, consumer deduplication |
 | **Application state** | Redis for OTPs, caching, rate limits and short-lived coordination |
-| **Reliability** | retry/recovery paths, health checks, readiness, bounded queries |
+| **Reliability** | retry/recovery paths, health checks, readiness and bounded queries |
 | **Testing** | unit, integration, architecture, regression and browser-level verification |
 
 ---
@@ -82,7 +82,7 @@ My backend work includes:
 
 ### Enterprise Visitor & Workforce Operations Platform
 
-[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
+[**Live Demo →**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Public Demo →**](https://github.com/JetyChodipilli/Brainserve-Connect-client-demo) · [**Public Implementation Snapshot →**](https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack) · [**Interactive GitDiagram →**](https://gitdiagram.com/JetyChodipilli/V2_Brainserve_Connect_gstack)
 
 <p>
   <a href="https://github.com/JetyChodipilli/V2_Brainserve_Connect_gstack/actions/workflows/ci.yml">
@@ -91,6 +91,14 @@ My backend work includes:
 </p>
 
 The primary working repository is private. The public demo and implementation snapshot expose the product flow and architecture without publishing the production codebase.
+
+### System architecture
+
+<a href="https://gitdiagram.com/JetyChodipilli/V2_Brainserve_Connect_gstack">
+  <img src="./assets/brainserve-architecture.svg" width="100%" alt="BrainServe Connect architecture showing the React workspace, Spring Security, workplace and visitor operations, PostgreSQL, Redis, Kafka, ClamAV, audit records, SMTP and object storage" />
+</a>
+
+<sub>Profile-sized architecture view based on the same module boundaries in my GitDiagram view. Click the diagram for the interactive public snapshot.</sub>
 
 ### Production stack
 
@@ -199,6 +207,26 @@ I label it as learning work intentionally. BrainServe Connect and Client Onboard
 
 ## Core stack
 
+<p align="center">
+  <img height="46" title="Java" alt="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Spring" alt="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="PostgreSQL" alt="PostgreSQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Apache Kafka" alt="Apache Kafka" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Redis" alt="Redis" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Docker" alt="Docker" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="GitHub Actions" alt="GitHub Actions" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Maven" alt="Maven" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" />
+  &nbsp;&nbsp;&nbsp;
+  <img height="46" title="Git" alt="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" />
+</p>
+
 | Area | Technologies I use |
 |---|---|
 | **Java & Spring** | Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring Modulith |
@@ -210,10 +238,6 @@ I label it as learning work intentionally. BrainServe Connect and Client Onboard
 | **Delivery** | Maven, Docker, GitHub Actions |
 | **Communication** | gRPC, Protocol Buffers |
 | **Integration** | AWS SES, S3-compatible storage |
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,githubactions,maven,git" alt="Core backend stack" />
-</p>
 
 ---
 
@@ -240,6 +264,18 @@ A few rules I try to keep consistent across projects:
 - idempotency matters anywhere a request can safely arrive twice
 - schema changes belong in versioned migrations
 - tests should cover boundaries and failure paths, not only happy-path methods
+
+---
+
+## Contribution activity
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
+    <img width="100%" alt="GitHub contribution activity snake" src="https://raw.githubusercontent.com/JetyChodipilli/JetyChodipilli/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
 
 ---
 
