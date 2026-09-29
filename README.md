@@ -27,7 +27,7 @@ My day-to-day stack is **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker*
 💼 **Current:** Jr. Java Developer @ Brainserve Groups Pvt. Ltd.  
 🔎 **Open to Java Backend / Spring Boot opportunities**
 
-[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**BrainServe Live Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Resume**](https://res.cloudinary.com/dtl11fi8q/image/upload/v1790238840/Jety_Chodipilli_Java_Backend_Developer_eyd961.pdf)
 
 </td>
 <td width="32%" align="center" valign="middle">
@@ -239,6 +239,6 @@ I keep ORCID for citable technical and research work; source code stays on GitHu
 
 ## Professional Links
 
-[**GitHub**](https://github.com/JetyChodipilli) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
+[**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Resume**](https://res.cloudinary.com/dtl11fi8q/image/upload/v1790238840/Jety_Chodipilli_Java_Backend_Developer_eyd961.pdf) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
 **Java Backend · Spring Boot · Security · System Design**
