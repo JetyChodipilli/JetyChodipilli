@@ -10,9 +10,9 @@
 
 **Jr. Java Developer @ Brainserve Groups Pvt. Ltd.**
 
-I build backend applications with **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker**.
+I work on Java/Spring Boot backends where **authorization, workflow state, transactions, asynchronous processing and recovery** need to stay correct as the application grows.
 
-Most of my work involves secure APIs, role-based workflows, database-backed business logic, asynchronous processing and application reliability.
+My day-to-day stack is **Java, Spring Boot, PostgreSQL, Kafka, Redis and Docker**.
 
 <p>
   <img src="https://img.shields.io/badge/Java-17%20%2F%2021-15324B?style=flat-square&logo=openjdk&logoColor=white" />
@@ -43,17 +43,17 @@ Most of my work involves secure APIs, role-based workflows, database-backed busi
 
 ---
 
-## What I Work On
+## Backend Engineering Focus
 
-| Area | Experience from my projects |
+| Focus | Working areas |
 |---|---|
 | **Security** | Spring Security, JWT, RBAC, MFA, resource-level authorization |
-| **Workflow systems** | approval flows, lifecycle transitions, workflow versioning, audit history |
-| **Data** | PostgreSQL, JPA/Hibernate, transactions, Flyway migrations, idempotency |
-| **Messaging** | Kafka, asynchronous notifications, durable event processing |
-| **Application state** | Redis for OTPs, caching, rate limiting and short-lived state |
-| **Testing** | unit, integration, architecture and browser-level testing |
-| **Delivery** | Maven, Docker, GitHub Actions and deployable demo environments |
+| **Workflow design** | approval chains, lifecycle transitions, workflow versioning, audit history |
+| **Data & transactions** | PostgreSQL, JPA/Hibernate, transaction boundaries, Flyway migrations |
+| **Messaging** | Kafka, transactional outbox, asynchronous notifications, durable event delivery |
+| **State & coordination** | Redis for OTPs, caching, rate limiting and short-lived state |
+| **Reliability** | idempotency, retries, recovery paths, concurrency handling and bounded queries |
+| **Verification & delivery** | unit, integration, architecture and browser testing; Maven, Docker and GitHub Actions |
 
 ---
 
@@ -147,35 +147,54 @@ A course-based project I used to practice service-to-service communication acros
 
 ---
 
-## Backend Practices I Follow
+## Backend Decisions I Care About
 
-- authorization checks are enforced on the backend
-- transaction boundaries are kept around related business changes
-- database migrations are versioned with Flyway
-- workflow state changes are stored with audit history where required
-- Kafka is used for work that benefits from asynchronous processing
-- Redis is used for short-lived state, caching and coordination where needed
-- retries and recovery paths are handled for network and service failures
-- unit tests are supported by integration, architecture and browser-level tests
+- authorization is enforced server-side; hiding a control in the UI is not a security boundary
+- transaction boundaries follow the business change that must succeed or fail together
+- schema changes are versioned with Flyway instead of being applied manually
+- Kafka is used when asynchronous or durable delivery solves a real workflow problem
+- Redis is used for short-lived state, caching and coordination rather than as the source of truth
+- retries are designed together with idempotency and recovery behavior
+- tests cover integration boundaries and failure paths, not only happy-path methods
 
 ---
 
-## Core Stack
+## Backend Stack
 
 | Area | Technologies I use |
 |---|---|
 | **Java & Spring** | Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate, Spring Modulith |
-| **Architecture** | REST APIs, modular monoliths, microservices, event-driven systems |
-| **Data** | PostgreSQL, MySQL, Flyway |
-| **Messaging & State** | Apache Kafka, Redis |
-| **Security** | JWT, RBAC, MFA, BCrypt, request validation |
+| **API & architecture** | REST APIs, modular monoliths, microservices, event-driven systems |
+| **Persistence** | PostgreSQL, MySQL, JPA/Hibernate, Flyway |
+| **Messaging & state** | Apache Kafka, Redis, transactional outbox patterns |
+| **Security** | JWT, RBAC, MFA, BCrypt, request validation, resource-level authorization |
+| **Reliability & concurrency** | idempotency, optimistic/pessimistic locking, retries, recovery paths |
 | **Testing** | JUnit 5, Mockito, Testcontainers, ArchUnit, integration testing |
+| **Observability** | Spring Boot Actuator, Micrometer, health/readiness endpoints |
 | **Delivery** | Maven, Docker, GitHub Actions |
-| **Communication** | gRPC, Protocol Buffers |
-| **Integration** | AWS SES |
+| **Service communication** | REST, gRPC, Protocol Buffers |
+| **External integration** | AWS SES, S3-compatible storage |
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,postgres,mysql,redis,kafka,docker,githubactions,maven,git" alt="Core backend stack" />
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="Java" title="Java" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring" title="Spring" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="Redis" title="Redis" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" title="Apache Kafka" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" alt="Maven" title="Maven" />
+  &nbsp;&nbsp;
+  <img height="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/git/git-original.svg" alt="Git" title="Git" />
 </p>
 
 ---
@@ -193,13 +212,13 @@ A course-based project I used to practice service-to-service communication acros
 
 ---
 
-## ORCID
+## Research Identity
 
 <a href="https://orcid.org/0009-0008-8585-051X">
   <img src="https://img.shields.io/badge/ORCID-0009--0008--8585--051X-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID 0009-0008-8585-051X" />
 </a>
 
-I use ORCID for technical publications, research work and other citable work. GitHub is where I keep my source code.
+I keep ORCID for citable technical and research work; source code stays on GitHub.
 
 ---
 
@@ -215,7 +234,7 @@ I use ORCID for technical publications, research work and other citable work. Gi
 
 ---
 
-## Connect
+## Professional Links
 
 [**GitHub**](https://github.com/JetyChodipilli) · [**LinkedIn**](https://www.linkedin.com/in/jetychodipilli) · [**Portfolio**](https://jetychportfolio.netlify.app/) · [**BrainServe Demo**](https://brain-serve-connect-vercel-demo.vercel.app/) · [**ORCID**](https://orcid.org/0009-0008-8585-051X)
 
