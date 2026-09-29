@@ -140,121 +140,49 @@ The project explores Redis, pessimistic and optimistic JPA locking, database-bac
 
 ## Backend Engineering Stack
 
-Technologies and engineering areas I use most often in backend application work.
+The tools I use most often to build, secure, test and operate backend applications.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### Java & Spring
+### Core Backend
 
 <p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/java/java-original.svg" alt="Java" title="Java 17/21" />
-  &nbsp;
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring" title="Spring Boot" />
+  <img src="https://img.shields.io/badge/Java_17%2F21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17/21" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security" />
+  <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Data JPA" />
+  <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate" />
+  <img src="https://img.shields.io/badge/Spring_Modulith-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Modulith" />
 </p>
 
-**Java 17/21 · Spring Boot · Spring Security**  
-Spring Data JPA · Hibernate · Spring Modulith
-
-REST APIs · validation · business workflows · modular design
-
-</td>
-<td width="50%" valign="top">
-
-### Data
+### Data · Messaging · State
 
 <p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" />
-  &nbsp;
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Flyway-CC0200?style=flat-square&logo=flyway&logoColor=white" alt="Flyway" />
+  <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white" alt="Apache Kafka" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis" />
 </p>
 
-**PostgreSQL · MySQL · Flyway**
-
-transactions · schema migrations · persistence · indexing
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### Messaging & State
+### Security · Testing · Delivery
 
 <p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/apachekafka/apachekafka-original.svg" alt="Apache Kafka" title="Apache Kafka" />
-  &nbsp;
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/redis/redis-original.svg" alt="Redis" title="Redis" />
+  <img src="https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white" alt="JWT" />
+  <img src="https://img.shields.io/badge/RBAC-44546A?style=flat-square" alt="RBAC" />
+  <img src="https://img.shields.io/badge/MFA-44546A?style=flat-square" alt="MFA" />
+  <img src="https://img.shields.io/badge/JUnit_5-25A162?style=flat-square&logo=junit5&logoColor=white" alt="JUnit 5" />
+  <img src="https://img.shields.io/badge/Mockito-78A641?style=flat-square" alt="Mockito" />
+  <img src="https://img.shields.io/badge/Testcontainers-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Testcontainers" />
+  <img src="https://img.shields.io/badge/ArchUnit-4C566A?style=flat-square" alt="ArchUnit" />
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
-**Apache Kafka · Redis**
+### Engineering Areas
 
-transactional outbox · event delivery · caching · rate limits · idempotency
+**REST APIs · transaction boundaries · workflow design · idempotency · concurrency · transactional outbox · retries & recovery · health/readiness · system design**
 
-</td>
-<td width="50%" valign="top">
-
-### Security
-
-<p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/spring/spring-original.svg" alt="Spring Security" title="Spring Security" />
-</p>
-
-**Spring Security · JWT · RBAC · MFA**
-
-resource-level authorization · backend-enforced access control
-
-</td>
-</tr>
-
-<tr>
-<td width="50%" valign="top">
-
-### Testing
-
-<p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/junit/junit-original.svg" alt="JUnit" title="JUnit 5" />
-</p>
-
-**JUnit 5 · Mockito · Testcontainers · ArchUnit**
-
-unit · integration · architecture · browser-level verification
-
-</td>
-<td width="50%" valign="top">
-
-### Delivery & Observability
-
-<p>
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/maven/maven-original.svg" alt="Maven" title="Maven" />
-  &nbsp;
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" alt="Docker" title="Docker" />
-  &nbsp;
-  <img height="34" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" />
-</p>
-
-**Maven · Docker · GitHub Actions**
-
-Actuator · Micrometer · health/readiness · CI/CD
-
-</td>
-</tr>
-
-<tr>
-<td colspan="2" valign="top">
-
-### Architecture
-
-**REST APIs · Modular Monoliths · Microservices · gRPC · Protocol Buffers**
-
-concurrency · transaction boundaries · workflow design · system design · recovery
-
-</td>
-</tr>
-</table>
-
-#### Typical backend flow
+#### Typical Backend Flow
 
 `Client / Frontend` → `Spring Boot API` → `Security` → `Business Logic` → `PostgreSQL / Redis` → `Kafka` → `External Services`
 
