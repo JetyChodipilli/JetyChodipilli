@@ -145,13 +145,15 @@ The backend technologies I am comfortable working with and discussing in an inte
 ### Java · Spring
 
 <p>
-  <img src="https://img.shields.io/badge/Java_17%2F21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 17/21" />
+  <img src="https://img.shields.io/badge/Java_8%2F17%2F21-ED8B00?style=flat-square&logo=openjdk&logoColor=white" alt="Java 8/17/21" />
   <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" alt="Spring Boot" />
   <img src="https://img.shields.io/badge/Spring_MVC-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring MVC" />
   <img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white" alt="Spring Security" />
   <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white" alt="Spring Data JPA" />
   <img src="https://img.shields.io/badge/Hibernate-59666C?style=flat-square&logo=hibernate&logoColor=white" alt="Hibernate" />
 </p>
+
+**Core Java:** OOP · Collections · Generics · JDBC · Multithreading
 
 ### Data · Messaging · State
 
@@ -179,6 +181,7 @@ The backend technologies I am comfortable working with and discussing in an inte
   <img src="https://img.shields.io/badge/Mockito-78A641?style=flat-square" alt="Mockito" />
   <img src="https://img.shields.io/badge/Maven-C71A36?style=flat-square&logo=apachemaven&logoColor=white" alt="Maven" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
 </p>
 
