@@ -273,15 +273,7 @@ concurrency · transaction boundaries · workflow design · system design · rec
 
 ---
 
-## Research Identity
 
-<a href="https://orcid.org/0009-0008-8585-051X">
-  <img src="https://img.shields.io/badge/ORCID-0009--0008--8585--051X-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID 0009-0008-8585-051X" />
-</a>
-
-I keep ORCID for citable technical and research work; source code stays on GitHub.
-
----
 
 ## Contribution Activity
 
