@@ -11,33 +11,33 @@
   
     <circle cx="28" cy="59" r="6" fill="#B07219"/>
     <text x="44" y="64" class="label">Java</text>
-    <text x="458" y="64" class="pct">45.0%</text>
+    <text x="458" y="64" class="pct">44.4%</text>
     <rect x="178" y="52" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="52" width="137" height="11" rx="5.5" fill="#B07219"/>
+    <rect x="178" y="52" width="135" height="11" rx="5.5" fill="#B07219"/>
   
     <circle cx="28" cy="101" r="6" fill="#3178C6"/>
     <text x="44" y="106" class="label">TypeScript</text>
-    <text x="458" y="106" class="pct">27.8%</text>
+    <text x="458" y="106" class="pct">27.9%</text>
     <rect x="178" y="94" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
     <rect x="178" y="94" width="85" height="11" rx="5.5" fill="#3178C6"/>
   
     <circle cx="28" cy="143" r="6" fill="#5B7184"/>
     <text x="44" y="148" class="label">Jupyter Notebook</text>
-    <text x="458" y="148" class="pct">11.6%</text>
+    <text x="458" y="148" class="pct">11.0%</text>
     <rect x="178" y="136" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="136" width="35" height="11" rx="5.5" fill="#5B7184"/>
+    <rect x="178" y="136" width="34" height="11" rx="5.5" fill="#5B7184"/>
   
     <circle cx="28" cy="185" r="6" fill="#F1E05A"/>
     <text x="44" y="190" class="label">JavaScript</text>
-    <text x="458" y="190" class="pct">7.9%</text>
+    <text x="458" y="190" class="pct">8.7%</text>
     <rect x="178" y="178" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="178" width="24" height="11" rx="5.5" fill="#F1E05A"/>
+    <rect x="178" y="178" width="27" height="11" rx="5.5" fill="#F1E05A"/>
   
     <circle cx="28" cy="227" r="6" fill="#563D7C"/>
     <text x="44" y="232" class="label">CSS</text>
-    <text x="458" y="232" class="pct">3.6%</text>
+    <text x="458" y="232" class="pct">3.4%</text>
     <rect x="178" y="220" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="220" width="11" height="11" rx="5.5" fill="#563D7C"/>
+    <rect x="178" y="220" width="10" height="11" rx="5.5" fill="#563D7C"/>
   
     <circle cx="28" cy="269" r="6" fill="#336790"/>
     <text x="44" y="274" class="label">PLpgSQL</text>
