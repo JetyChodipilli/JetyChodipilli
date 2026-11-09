@@ -11,25 +11,25 @@
   
     <circle cx="28" cy="59" r="6" fill="#B07219"/>
     <text x="44" y="64" class="label">Java</text>
-    <text x="458" y="64" class="pct">43.8%</text>
+    <text x="458" y="64" class="pct">43.6%</text>
     <rect x="178" y="52" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="52" width="134" height="11" rx="5.5" fill="#B07219"/>
+    <rect x="178" y="52" width="133" height="11" rx="5.5" fill="#B07219"/>
   
     <circle cx="28" cy="101" r="6" fill="#3178C6"/>
     <text x="44" y="106" class="label">TypeScript</text>
-    <text x="458" y="106" class="pct">28.2%</text>
+    <text x="458" y="106" class="pct">28.4%</text>
     <rect x="178" y="94" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
-    <rect x="178" y="94" width="86" height="11" rx="5.5" fill="#3178C6"/>
+    <rect x="178" y="94" width="87" height="11" rx="5.5" fill="#3178C6"/>
   
     <circle cx="28" cy="143" r="6" fill="#5B7184"/>
     <text x="44" y="148" class="label">Jupyter Notebook</text>
-    <text x="458" y="148" class="pct">10.6%</text>
+    <text x="458" y="148" class="pct">10.5%</text>
     <rect x="178" y="136" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
     <rect x="178" y="136" width="32" height="11" rx="5.5" fill="#5B7184"/>
   
     <circle cx="28" cy="185" r="6" fill="#F1E05A"/>
     <text x="44" y="190" class="label">JavaScript</text>
-    <text x="458" y="190" class="pct">9.4%</text>
+    <text x="458" y="190" class="pct">9.6%</text>
     <rect x="178" y="178" width="250" height="11" rx="5.5" fill="#E7EEF2"/>
     <rect x="178" y="178" width="29" height="11" rx="5.5" fill="#F1E05A"/>
   
